@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Cuprum');
+* {
+	box-sizing: border-box;
+}
+body {
+	background:
+	linear-gradient(180deg,#404040 1px,transparent 0%) 15px 15px,
+	linear-gradient(90deg, #454545 1px, transparent 0%) 23px 23px,
+	linear-gradient(180deg, #454545 1px,transparent 0%) 23px 23px,
+	linear-gradient(90deg, #404040 1px,transparent 0%) 15px 15px;
+	background-size:15px 15px, 30px 30px, 30px 30px, 15px 15px;
+	background-repeat:repeat;
+	background-color: #3d3d3d;
+	font: 16px Arial, Tahoma, "Trebuchet MS", sans-serif;
+	color: #6c6c6c;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-family: Cuprum;
+	font-size: 25px;
+   	line-height: 25px;
+   	margin: 0;
+   	font-weight: normal;
+}
+p {
+	margin: 10px;
+	line-height: 1.1;
+}
+a { 
+    text-decoration: none; 
+    color: #fff;
+} 
+.clear {
+	clear: both;
+}
+.header_title,
+.header_title-job,
+.container_header-title {
+	font-weight: normal;
+	text-align: center;
+}
+.header_title {
+	color: #d76767;
+	font-size: 36px;
+}
+.header_title-job {
+	color: #0093ae;
+	font-size: 48px;
+}
+.container {
+	width: 1200px;
+	height: 1600px;
+	margin: 50px auto;
+}
+.container_header {
+	height: 500px;
+	background: #272727;
+}
+.container_header-logo {
+	width: 490px;
+	height: 305px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.container_header-title {
+	color: #fff;
+	font-size: 36px;
+}
+.gallary {
+	width: 1200px;
+	height: 1100px;
+	background: #fff;
+	padding-top: 25px;
+}
+.gallary_container {
+	width: 525px;
+	height: 300px;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	margin: 25px 0 25px 50px;
+	float: left;
+}
+.gallary_img {
+	width: 260px;
+	height: 260px;
+	box-shadow: 0 0 13px -1px #333 inset;
+	margin-right: 20px;
+    padding: 20px;
+	float: left;
+	background: url(img/car.jpeg) -13px 0/cover no-repeat;
+}
+.field {
+	background: url(img/field.jpg) 0/cover no-repeat;
+}
+.pen {
+	background: url(img/pen.jpg) -50px 0/cover no-repeat;
+}
+.sky {
+	background: url(img/sky.jpg) 0/cover no-repeat;
+}
+.foot {
+	background: url(img/foot.jpg) -45px/cover no-repeat;
+}
+.clock {
+	background: url(img/clock.png) 0/cover no-repeat;
+}
+.gallary_desc {
+	text-align: justify;
+	position: relative;
+}
+.gallary_container2 {
+	float: right;
+}
+.btn {
+	width: 140px;
+	height: 30px;
+	background: #0070bb;
+	border: 1px solid #0162a4;
+	padding: 5px;
+	float: right;
+	top: 230px;
+    left: 335px;
+	position: absolute;
+}
+.btn:hover {
+	background: #e44d26;
+	border: 1px solid #c13612;
+	transition: 0.1s all;
+}
+.btn:hover~h3{
+	color: #e44d26;
+}
+.footer{
+	text-align: center;
+	margin-bottom: 50px;
+}

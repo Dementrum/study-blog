@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+	<title>Пятая неделя тренинга</title>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="les.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="mid">
+				<img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
+				<div class="icons">
+					<a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt=""></a>
+					<a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt=""></a>
+					<a href="mailto:dmitrikolesnikov1976@gmail.com" target="_blank"><img src="images/igplus.png" alt=""></a>
+				</div>
+				<div class= "name">Онлайн-дневник Дмитрия Колесникова.</div>
+				<div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div> 
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
+					<li><a href="">Отзыв о тренинге</a></li>
+					<li><a href="form.html">Связаться со мной</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="sidebar week">
+			<div class="widget">
+				<ul>
+					<li><a href="week1.html">Неделя 1 - Ясли</a></li>
+					<li><a href="week2.html">Неделя 2 - Детский сад</a></li>
+					<li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
+					<li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
+					<li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
+					<li><a href="week6.html">Неделя 6 - Выпускники</a></li>
+					<li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+					<li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+					<li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
+				    <li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
+				</ul>
+			</div>
+			<div class="widget everyday1">
+				<ul>
+					<li><a href="#d1">День 1. Атрибуты тега input</a></li>
+					<li><a href="#d2">День 2. Человекоформа :).</a></li>
+					<li><a href="#d3">День 3. Солидол.</a></li>
+					<li><a href="#d4">День 4. Отправка писем.</a></li>
+					<li><a href="#d5">День 5. Семантические элементы в HTML5.</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content">
+			<article>
+				<header>
+					<h1>Неделя 5 - Старшая школа</h1>
+				</header>
+				<section>
+					<div class="day">
+						<h2 id="d1">День 1. Атрибуты тега input</h2>
+						<p>При помощи дополнительных атрибутов, мы можем более конкретно настраивать поля наших форм.</p>
+						<h3>Атрибуты тега input</h3>
+						<ul>
+							<li><i>required</i> - делает поле обязательным для заполнения.</li>
+							<li><i>placeholder</i> - текст в поле, который исчезает при заполнении формы.</li>
+							<li><i>autocomplete</i> - автозаполнение поля.</li>
+							<li><i>pattern</i> - задает формат ввода данных для поля.</li>
+							<li><i>min</i> -задает минимальное значение для поля.</li>
+							<li><i>max</i> - задает максимальное значение для поля.</li>
+							<li><i>multiple</i> - разрешает указать несколько почтовых адресов (через запятую), или файлов для загрузки.</li>
+							<li><i>step</i> - задает шаг и актуален для числовых полей и ползунка.</li>
+							<li><i>autofocus</i> - задает автоматический фокус для указанного поля.</li>
+							<li><i>form</i> - привязывает поле к определенной форме.</li>
+							<li><i>list</i> - используется для привязки к тегу <span class="tag">&lt;datalist&gt;</span>, что бы указать на список вариантов. </li>
+						</ul>
+						<h3>Пример формы.</h3>
+						<p>Это то же самая форма, которая использовалась в пятом дне четвертой недели. Но она дополнительно имеет настройки для своих полей.</p>
+						<form>
+							<p><b>Форма для заказа киллера</b></p>
+							<span>*Укажите имя: </span>
+							<input type="text" name="name" placeholder="Укажите своё имя" autocomplete><br>
+							<span>* Укажите почту: </span>
+							<input type="email" name="e-mail" placeholder="Укажите свой e-mail" required multiple><br>
+							<span>Выберите дату: </span>
+							<input type="date" name="date"><br>
+							<input type="range" name="range" min="18" max="250" step="50"><br>
+							<span>Сколько вам лет: </span>
+							<input type="number" name="number" placeholder="Возраст" min="18" max="250" step="10"><br>
+							<span>Выберите цвет глаз: </span>
+							<input type="color" name="color"><br>
+							<span>Ваш контакт: </span>
+							<input type="url" name="url" placeholder="Напишите свои контакты"><br>
+							<span>Ваш телефон: </span>
+							<input type="tel" name="tel" pattern="[0-9]{5}-[0-9]{7}" placeholder="11111-1111111"><br>
+							<span>Где искать? </span>
+							<input type="search" name="search" placeholder="Напишите координаты"><br>
+							<input type="submit" name="button" value="Застрелиться">
+						</form>
+						<div class="block_question">
+							<p>Серёга, у меня вопрос:<br>
+							Почему то не работает у меня атрибут autocompete. Ни в одном браузере. Даже ставил ему переключатель в положение "on". В настройках браузера включено автозаполнение личных данных. В чем дело не пойму.</p>
+						</div>
+						<div class="close">
+							<p><b>Заключение:</b></p>
+							<p>Сколько же много атрибутов у формы, я даже и не знал. Хорошо что теперь все у меня "у шкапчике прибраны". Достать нужный пара пустяков!!!</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Человекоформа :)</h2>	
+						<p><span class="tag">&lt;label&gt;</span>  - этот тег связывает текст и поле формы. То есть, при клике на тексте, активируется поле.</p>
+						<p>Связываться можно двумя способами. Первый - разместить все внутри тега <span class="tag">&lt;label&gt;</span>. Второй при помощи специального атрибута и идентификатора.</p>
+						<p><span class="tag">&lt;select&gt;</span> - задает список в котором можно выбрать определенные значения. Значения (пункты списка) задаются при помощи тега <span class="tag">&lt;option&gt;</span></p>
+						<p><span class="tag">&lt;optgroup&gt;</span> - обьединяет пункты списков в отдельные группы.</p>
+						<p><span class="tag">&lt;output&gt;</span> - через этот тег можно вывести результат поля формы или его дополнительно обработать при выводе.</p>
+						<p><span class="tag">&lt;datalist&gt;</span> - создает список вариантов для заполнения поля. Активируется данный список при фокусе на поле (двойной щелчок) либо при вводе информации.</p>
+						<p><span class="tag">&lt;textarea&gt;</span> - поле для ввода большого текта. Текст виден в несколько строк.</p>
+						<p>Атрибуты поля <span class="tag">&lt;textarea&gt;:</span></p>	
+						<ul>
+							<li><i>maxlength</i> - задает максимальное количество символов в поле.</li>
+							<li><i>wrap</i></li>
+								<ul>
+									<li><i>soft</i> - Длинный текст, который самостоятельно не помещается в поле по ширине, будет автоматически перенесен на новую строку, однако передаваться на сервер будет как одна строка.</li>
+									<li><i>hard</i> - Слова в поле, как и в первом случае переносятся автоматически, разница только в том, что все переносы сохранятся.</li>
+									<li><i>off</i> - Нестандартное значение. Переносы строк отключены. При введении длинного текста без переносов, он будет печататься в одну строку, при этом будет отображаться полоса прокрутки.</li>
+								</ul>
+						</ul>
+						<div class="block_important">
+					    	<p>При значении атрибута wrap равном hard - обязательно должен быть указан атрибут cols.</p>
+					    </div>
+						<h3>Пример формы:</h3>
+						<form action="#">
+							<label>
+								Введите ваше имя:
+								<input list="names" type="text" placeholder="Укажите ваше имя." required>
+								<datalist id="names">
+									<option value="Антон">Антоха</option>
+									<option value="Андрей">Дюша</option>
+									<option value="Семен">Сёма</option>
+									<option value="Сергей">Серж</option>
+									<option value="Жора">Жорж</option>
+									<option value="Иван">Ваня</option>
+									<option value="Николай">КоляН</option>
+									<option value="Павел">Паха</option>
+									<option value="Денис">Дёсик</option>
+									<option value="Илья">Илюха</option>
+								</datalist>
+							</label><br>
+							<label for="mail">Укажите ваш e-mail:</label>
+							<input id="mail" type="email" name="e-mail" placeholder="Укажите свой e-mail" required><br>
+							<label>
+								Укажите тему письма:
+								<select name="tema">
+									<optgroup label="Вопросы по продуктам">
+										<option value="support">Поддержка автора</option>
+										<option value="sell" selected>Покупка тренинга</option>
+										<option value="buy">Способы оплаты</option>	
+									</optgroup>
+									<optgroup label="Вопросы по сайту">
+										<option value="article">Вопрос по статье</option>
+										<option value="other">Другое</option>
+									</optgroup>
+								</select>
+							</label><br>
+							<label>
+									Укажите возраст:
+									<input type="range" name="age" min="18" max="250" step="1" value="18" oninput="rage.value=age.value" >
+									<output name="rage">18</output>
+							</label><br>
+						</form>
+						<form oninput="p.value=a.value*365" >
+						    <label>Укажите возраст:
+						        <input type="range" name="a" min="18" max="65" step="1" value="30" oninput="q.value=a.value"  >
+						        Вам <output name="q">30</output> лет или  <output name="p" >10950</output> дней.
+						    </label><br>
+						    <label>
+						    	Введите сообщение:<br>
+						    	<textarea wrap="hard" maxlength="10" name="comments" placeholder="Введите свой комментарий"></textarea> 
+					    	</label>
+					    </form>
+					    <div class="block_important">
+					    	 <b>ВНИМАНИЕ!</b><br>
+					    	 Браузер <b>firefox</b> не поддерживает одинарный тег <span class="tag">&lt;option&gt;</span>, вместо него он вставляет пустую строку!
+					    </div>
+					   
+					    <div class="block_question">
+							<p>Серёга, у меня вопрос:<br>
+							Можно ли на данное время использовать тег <span class="tag">&lt;output&gt;</span> и атрибут <span class="tag">oninput.</span> Или это всё уже через JS делается?</p>
+						</div>
+						<div class="close">
+							<p><b>Заключение:</b></p>
+							<p>Целая гора атрибутов, которая непременно требует практики. </p>
+						</div>
+					</div>
+					</section>
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Солидол.</h2>
+					<h3>Наша солидная формочка!</h3>
+					
+						<form action="#" method="post" class="form_test">
+							<h3 class= "name_form">Форма обратной связи</h3>
+							<label>
+								<span>Введите ваше имя:</span>
+								<input type="text" name="name" placeholder="введите имя" required>
+							</label>
+							<label>
+								<input type="email" name="e-mail" placeholder="введите e-mail" required multiple>
+							</label>
+							<label>
+							    <span>Введите ваш телефон:</span>
+								<input type="tel" class="phone" name="phone" placeholder="+7(XXX) XXX-XX-XX"><br>
+							</label>
+							<label>
+							    <span>Напишите тему:</span>
+								<input type="text" name="tems" placeholder="Введите тему" required ><br>
+							</label>
+							 <label>
+						    	<span>Оставьте сообщение:</span>
+						    	<textarea wrap="soft" maxlength="100" name="comments" placeholder="Оставьте сообщение"></textarea> 
+					    	</label>
+					    	<div>
+					    		<input class="form_button" type="submit" name="button" value="Отправить письмо">
+					    		<input class= "form_button" type="reset" name="button" value="Очистить форму">
+					    	</div>
+					    </form>
+					    <div class="block_question">
+					    	<p> Серёга, не получается форму очистить после отправки.Очистить форму нужно после приема и обработки данных. Очистить без перезагрузки.Чтобы не выскакивало при обновлении страницы : Подтвердите повторную отправку формы.</p>
+						</div>	
+						<div class="close">
+						<p><b>Заключение:</b></p>
+							<p>Наконец то я добил тему по формам. Долгожданная домашка. Надо как-то увеличивать темп обучения, причем в разы.Но не очень получается пока.</p>
+						</div>
+				</div>
+		     	</section>
+		     	<section>
+		     		<div class="day">
+		     			<h2 id="d4">День 4. Отправка писем</h2>
+							<p>Сегодня мы ничего не писали в свой дневник. Однако мы работали со скриптом отправки сообщений и настраивали нашу форму обратной связи.</p>
+							<p>Она находится по этому адресу: <a href="form/index.php" class= "style">Отправить письмо</a></p>
+							<div class="close">
+								<p><b>Заключение:</b></p>
+								<p>С формами обратной связи "гемор ещё тот, конечно :) </p>
+							</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d5" class="two-stick">День 5. Семантические элементы в HTML5.</h2>
+						<p>Тег <span class="tag">&lt;main&gt;</span>- в нём должен содержаться главный контент страницы.</p>
+						<div class="block_important">
+						<ol>
+							<li>Этот тег должен быть уникальным и встречаться один раз на странице.</li>
+							<li>Он не должен быть внутри других стуктурных тегов.</li>
+						</ol>
+						</div>	
+						<p>Если современные браузеры не будут понимать как отображать данный тег, пропишите ему следующие стили: </p>
+						<div class="code">
+						<img class="star" src="images/process.png" alt="">
+							main {display: block;}
+						</div>
+						<p>Тег <span class="tag">&lt;mark&gt;</span> - создаёт на странице выделенный текст. В некоторых браузерах он выделяется по умолчанию желтым.</p>
+						<p>Это <mark>выделенный текст.</mark> Используйте его для важных заметок.</p>
+						<p><span class="tag">&lt;time&gt;</span> - в нём указываем дату или время, или то и другое.</p>
+						<p><b>Атрибуты:</b></p>
+						<ul>
+							<li><i>datetime</i> - дата и время в тексте.</li>
+							<li><i>pubdate</i> - указывает дату публикации.</li>
+						</ul>
+						<p><time datetime="1984.07.20">1984.07.20</time> - дата моего рождения.</p>
+						<p><span class="tag">&lt;figure&gt;</span> - в нём мы можем группировать какие-либо элементы сайта.</p>
+						<figure>
+							<img src="images/k1.jpg" class="k-1" alt="photo">
+							<img src="images/k2.jpg" class="k-2" alt="photo">
+							<img src="images/k3.jpg" class="k-3" alt="photo">
+							<div class="clear"></div>
+							<figcaption>Это описание к нашим картинкам</figcaption>
+						</figure>
+						<p><span class="tag">&lt;figcaption&gt;</span> - в нем размещается описание группированных элементов сайта.</p>
+						<div class="block_important">
+							<p>Этот тег должен быть внутри тега <span class="tag">&lt;figure&gt;</span> - и он должен быть либо самым первым, либо самым последним.</p>
+						</div>
+						<div class="block_question">
+							<p>Серега у меня вопрос:</p>
+							<p>Я на странице "about.html" последнему  <b>img</b> (основы веб-дизайна) прилепил костыль <i>margin-top: -210px </i>.Хотя у него флоат и очистка есть. Почему то не захотел он вставать на место. Посмотри,пожалуйста.</p>
+						</div>
+						<div class="close">	
+							<p><b>Заключение:</b></p>
+							<p>Мы изучили некоторые новые теги. Особенно мне понравился тег <span class="tag">&lt;figure&gt;</span>. Надо сказать замечательная вещь, для блогов и для дневничков.</p>
+						</div>
+					</div>
+					</section>
+			</article>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="mid">
+				<div class="mid">
+				<img src="images/logo-foot.png" height="50" width="320" alt="">
+				2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+			</div>
+			</div>
+		</div>
+	</footer>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>	
+		<script>window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.inputmask.js"></script>
+		<script src="js/phonemask.js"></script>
+
+</body>
+</html>

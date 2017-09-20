@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+    <title>Восьмая неделя тренинга</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="les.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="mid">
+                <img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
+                <div class="icons">
+                    <a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt="skype" title="skype"></a>
+                    <a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt="письмо" title="написать мне"></a>
+                    <a href="form.html"><img src="images/igplus.png" alt="письмо" title="написать мне"></a>
+                </div>
+                <div class="name">Онлайн-дневник Дмитрия Колесникова.</div>
+                <div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="main_menu">
+            <div class="mid">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Об авторе</a></li>
+                    <li><a href="">Отзыв о тренинге</a></li>
+                    <li><a href="form.html">Связаться со мной</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="sidebar week">
+            <div class="widget everyday">
+                <ul>
+                    <li><a href="week1.html">Неделя 1 - Ясли</a></li>
+                    <li><a href="week2.html">Неделя 2 - Детский сад</a></li>
+                    <li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
+                    <li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
+                    <li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
+                    <li><a href="week6.html">Неделя 6 - Выпускники</a></li>
+                    <li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+                    <li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
+                    <li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
+                </ul>
+            </div>
+            <div class="widget everyday1">
+                <ul>
+                    <li><a href="#d1">День 1. Мистер Безье.</a></li>
+                    <li><a href="#d2">День 2. Трансформатор.</a></li>
+                    <li><a href="#d3">День 3. День 3. Занимацкий CSS</a></li>
+                    <li><a href="#d4">День 4. Анатомия анимации.</a></li>
+                    <li><a href="#d5">День 5. Подготовка к Flex'у.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Неделя 8 - Прогрессоры</h1>
+                </header>
+                <section>
+                    <div class="day">
+                        <h2 id="d1">День 1. Мистер Безье.</h2>
+                        <p><span class="style">transition-timing-function</span> свойства: </p>
+                        <ul>
+                            <li><i>ease</i> - медленно-быстро-медленно ( по умолчанию)</li>
+                            <li><i>linear</i> - действует одинаково на протяжении всей анимации.</li>
+                            <li><i>ease-in</i> - медленно-быстро</li>
+                            <li><i>ease-out</i> - быстро-медленно</li>
+                            <li><i>ease-in-out</i> - медленно-медленно</li>
+                            <li><i>step-start</i> - без анимации сразу применяет конечные стили</li>
+                            <li><i>step-end</i> - без анимации применяет стили в конце.</li>
+                            <li><i>steps</i> - указывает конкретное количество шагов для анимации</li>
+                            <li><i>cubic-bezier</i> - задает анимацию по кривой Безье</li>
+                        </ul>
+                        <div class="anime">
+                            <div class="mbez" style="transition: width 3s ease;">transition: width 3s ease</div>
+                            <div class="mbez" style="transition: width 3s linear;">transition: width 3s linear</div>
+                            <div class="mbez" style="transition: width 3s ease-in;">transition: width 3s ease-in</div>
+                            <div class="mbez" style="transition: width 3s ease-out;">transition: width 3s ease-out</div>
+                            <div class="mbez" style="transition: width 3s ease-in-out;">transition: width 3s ease-in-out</div>
+                            <div class="mbez" style="transition: width 3s step-start;">transition: width 3s step-start</div>
+                            <div class="mbez" style="transition: width 3s step-end;">transition: width 3s step-end</div>
+                            <div class="mbez" style="transition: width 3s steps(5, start);">transition: width 3s steps(5)</div>
+                            <div class="mbez" style="transition: width 3s cubic-bezier(.05, .98, .94, .06);">cubic-bezier(.05, .98, .94, .06)</div>
+                            <div class="mbez" style="transition: width 3s cubic-bezier(0,1.91,1,-0.96);">cubic-bezier(0,1.91,1,-0.96)</div>
+                            <div class="mbez" style="transition: width 3s cubic-bezier(0,-0.45,.98,-0.33);">cubic-bezier(0,-0.45,.98,-0.33)</div>
+                            <div class="mbez" style="transition: width 3s cubic-bezier(0,1.50,0,1.50);">cubic-bezier(0,1.50,0,1.50)</div>
+                        </div>
+                        <div class="block_chip">
+                            <p>На этом сайте вы сможете сгенерировать собственную кривую Безье. http://cubic-bezier.com/</p>
+                            <p>И добиться весьма интересных результатов.</p>
+                        </div>
+                        <div class="mbez2">Обратная анимация</div>
+                        <div class="block_important">
+                            <p>Если вы укажите анимацию в hover - она будет срабатывать при наведении мыши.</p>
+                            <p>А анимация, которая указана в обычном классе - когда мы убираем мышь.</p>
+                        </div>
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p>Дневничок становится всё более живее и привлекательнее. Это замечательно!!!</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d2">День 2. Трансформатор</h2>
+                        <p>Мы можем трансформировать наши блоки, а именно: переворачивать, растягивать, отодвигать, масшабировать и наклонять.</p>
+                        <p><span class="style">transform</span> - позволяет делать все то, что мы описали в абзаце выше.</p>
+                        <div class="transformer">Трансформаторная будка</div>
+                        <div class="block_important">
+                            <p>При трансформировании учитывайте отступы для блока, чтобы он не наезжал на элементы сайта.</p>
+                            <p>Также содержимое блока и его стили тоже будут трансформированы.</p>
+                        </div>
+                        <h3>Значения свойства transform</h3>
+                        <p><span class="style"><b>1.translate</b></span> - указывает сдвиг по горизонтали и вертикали:</p>
+                        <div class="transform">1</div>
+                        <p>У этого значения есть вариации: <span class="style">translateX</span> - сдвиг по горизонтали; <span class="style">translateY</span> - сдвиг по вертикали</p>
+                        <p><span class="style"><b>2.scale</b></span> - масштабирование по горизонтали и вертикали:</p>
+                        <div class="transform2">2</div>
+                        <p>У этого значения есть вариации: <span class="style">scaleX</span> - масштабирование по горизонтали; <span class="style">scaleY</span> - масштабирование по вертикали</p>
+                        <p><span class="style"><b>3.skew</b></span> - указывает угол наклона:</p>
+                        <div class="transform3">3</div>
+                        <p>У этого значения есть вариации: <span class="style">skewX</span> - угол наклона по горизонтали; <span class="style">skewY</span> - угол наклона по вертикали</p>
+                        <p><span class="style"><b>4.rotate</b></span> - поворачивает фигуру:</p>
+                        <div class="transform4">4</div>
+                        <h3>Интересный пример:</h3>
+                        <div class="transform5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus, voluptate?</div>
+                        <h3>Забавная домашка:</h3>
+                        <p>Для всех:</p>
+                        <div class="cube cube1"></div>
+                        <div class="cube cube2"></div>
+                        <div class="cube cube3"></div>
+                        <div class="cube cube4"></div>
+                        <p>Для продвинутых:</p>
+                        <div class="block_anime">
+                            <div class="cube cub1"></div>
+                            <div class="cube cub2"></div>
+                            <div class="cube cub3"></div>
+                            <div class="cube cub4"></div>
+                        </div>
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p>Кажется, что сложно реализовать анимацию, а на деле всё очень просто. СSS3, конечно очень крут!!!</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d3">День 3. Занимацкий CSS</h2>
+                        <p>Css3 поддерживает покадровую анимацию, которая позволяет создавать сложные анимации обьектов.</p>
+                        <p>Достигается она при помощи свойства - <span class="style">animation</span> и правила <span class="style">@keyframes</span>.</p>
+                        <div class="block_important">
+                            <p>При помощи свойства мы вызываем анимацию, а в правиле мы его задаем и описываем, как оно должно работать.</p>
+                        </div>
+                        <div class="animate">Пример animation</div>
+                        <p>У <span class="style">animation</span> 2 обязательных параметра - имя и ее продолжительность.</p>
+                        <p>Мы можем задавать анимацию в <span class="style">@keyframes</span> двумя способами.</p>
+                        <p>Первый - это простая анимация(<span class="style"> from / to</span> )</p>
+                        <p>Второй - покадровая анимация, которую мы задаем при помощи <span class="style">( процентов 0 - 100 )</span></p>
+                        <p><b>Пример покадровой анимации:</b></p>
+                        <div class="animate2">0% animation 100%</div>
+                        <p><b>Парочка советов:</b></p>
+                        <p><b>1.</b> Чтобы в конце не было прыжка, делайте последний слайд такой же, как и оригинальное состояние блока.</p>
+                        <p><b>2.</b> А чтобы вернуть оригинальное состояние - можно просто указать пустые фигурные скобки.</p>
+                        <p><b>3.</b> Можно удалить одинаковые свойства, которые находятся в промежуточных кадрах.</p>
+                        <p><b>4.</b> Анимация не должна двигать другие элементы сайта. Поэтому готовьте для нее плацдарм.</p>
+                        <p><b>5.</b> Если вы хотите двигать обьекты, используйте позиционирование.</p>
+                        <p><b>5.</b> Если вы используете позиционирование, все свойства, которые вы будете указывать, должны уже быть заданы вашему блоку.</p>
+                        <p><b>Мы едем едем едем</b></p>
+                        <div class="start">
+                            <div class="triangle"></div>
+                            <div class="animate3"></div>
+                        </div>
+                        <h3>Домашка</h3>
+                        <div class="signal signal2"></div>
+                        <div class="close">
+                            <p><b>Заключение:</b></p>
+                            <p>Свойство <span class="style">animation</span>, конечно очень крутое!. Я думаю, возможностей и способов для его применения масса.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d4">День 4. Анатомия анимации.</h2>
+                        <p>Свойство <span class="style">animation</span> имеет много различных настроек для анимации обьектов.</p>
+                        <p><b>Трепанация анимации:</b></p>
+                        <p><span class="style">animation-name</span> - задает имя для анимации.</p>
+                        <p><span class="style">animation-duration</span> - задает время анимации. </p>
+                        <p><span class="style">animation-timing-function</span> - кривая Безье, котора задает стиль анимации.</p>
+                        <p><span class="style">animation-delay</span> - задержка. </p>
+                        <p><span class="style">animation-iteration-count</span> - счётчик(используем целые числа), <span class="style">infinite</span> - бесконечно.</p>
+                        <p><span class="style">animation-direction</span> - указывает, как должна выполняться анимация.</p>
+
+                        <ul>
+                            <li><i>normal</i> - анимация работает от начала и до конца(от 0 - к 100%).</li>
+                            <li><i>reverse</i> - анимация работает от конца и до начала (от 100% - к 0).</li>
+                            <li><i>alternate</i> - анимация идет от начала к концу и, снова к возвращается в начало (от 0 - до 100%, и от 100% - к 0).</li>
+                            <li><i>alternate-reverse</i> - анимация работает наоборот<br>( со 100% - к 0 и от 0 - к 100%) </li>
+                        </ul>
+                        <div class="block_important">
+                            <p>Альтернативная анимация будет работать только если указан повтор больше одного.</p>
+                        </div>
+                        <p><span class="style">animation-fill-mode</span> - определяет как будет анимация воздействовать на элемент, до и после анимации.</p>
+                        <ul>
+                            <li><i>none</i> - после анимации элемент возвращается на круги своя.</li>
+                            <li><i>forwards</i> - после анимации элемент застывает в последнем кадре.</li>
+                            <li><i>backwards</i> - анимация начинает работать до начала анимации.</li>
+                            <li><i>both</i> - начинает работать сразу и застывает в последнем положении. </li>
+                        </ul>
+
+                        <div class="code">
+                            <img class="star" src="images/process.png" alt=""> test 2s ease-in 2s 2 alternate both;
+                        </div>
+                        <div class="start2">
+                            <div class="animate4"></div>
+                        </div>
+                        <p><span class="style">animation-play-state</span> - отвечает за паузу.</p>
+                        <p><span class="style">running</span> - анимация работает; <span class="style"> paused</span> - пауза.</p>
+                        <div class="start3">
+                            <div class="animate5"></div>
+                        </div>
+                        <div class="block_important">
+                            <p>
+                                При использовании
+                                <span class="style">animation</span> Важно соблюдать порядок параметров!
+                            </p>
+                            <p>
+                                При создании анимации обязательно должны быть указаны два параметра:
+                                <span class="style">animation-name </span> и <span class="style">animation-duration</span> !
+                            </p>
+                        </div>
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p>Очень много свойсв анимации. Куда их применять "ума не приложу!"</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d5">День 5. Подготовка к Flex'у.</h2>
+                        <p><b>RESET CSS - сброс стилей.</b></p>
+                        <p>Полностью обнуляет все стили по умолчанию у браузеров. Убирает отступы, поля, маркеры, межстрочные элементы и остальное оформление по умолчанию у браузеров.</p>
+                        <p>Придется полностью воссзоздавать все стили с нуля.</p>
+                        <p><b>NORMALIZE CSS</b> - нормализация стилей.</p>
+                        <p>В отличии от сброса стилей приводит все элементы сайта к единому нормальному виду во всех браузерах.</p>
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p>Кликни на слово <a href="exam/exam.html" target="_blank" style="text-decoration: underline; color: blue;"> Экзамен </a></p>
+                                <p>Страница на "float-ах".Было не сложно.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="mid">
+                <div class="mid">
+                    <img src="images/logo-foot.png" height="50" width="320" alt=""> 2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+        window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');
+
+    </script>
+    <script src="js/progressbaranimate.js"></script>
+</body>
+
+</html>

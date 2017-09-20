@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+	<title>Шестая неделя тренинга</title>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="les.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="mid">
+				<img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
+				<div class="icons">
+					<a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt=""></a>
+					<a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt=""></a>
+					<a href="mailto:dmitrikolesnikov1976@gmail.com" target="_blank"><img src="images/igplus.png" alt=""></a>
+				</div>
+				<div class= "name">Онлайн-дневник Дмитрия Колесникова.</div>
+				<div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div> 
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
+					<li><a href="">Отзыв о тренинге</a></li>
+					<li><a href="form.html">Связаться со мной</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="sidebar week">
+			<div class="widget everyday">
+				<ul>
+					<li><a href="week1.html">Неделя 1 - Ясли</a></li>
+					<li><a href="week2.html">Неделя 2 - Детский сад</a></li>
+					<li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
+					<li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
+					<li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
+					<li><a href="week6.html">Неделя 6 - Выпускники</a></li>
+					<li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+					<li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
+				    <li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
+				</ul>
+			</div>
+			<div class="widget everyday1">
+				<ul>
+					<li><a href="#d1">День 1. Прогрессивные личности</a></li>
+					<li><a href="#d2">День 2. Псевдоэлементы.</a></li>
+					<li><a href="#d3">День 3. Псевдоклассы.</a></li>
+					<li><a href="#d4">День 4. Псевдоуникумы...</a></li>
+					<li><a href="#d5">День 5.  Тексты и тени.</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<article>
+				<header>
+					<a id="top"></a>
+					<h1>Неделя 6 - Выпускники</h1>
+				</header>
+				<section>
+					<div class="day">
+						<h2 id="d1" class="two-stick">День 1. Прогрессивные личности</h2>
+						<p>Тег <span class="tag" >&lt;progress&gt;</span> - создает прогресс-бар. Который мы можем анимировать через JavaScript</p>
+						<p>Загрузка мозга: <progress max="100" value="50" id="progressbar">Загрузка мозга:</progress></p>	
+						<p><span class="tag">&lt;meter&gt;</span> - отображает числовые значения в баре и в зависимости от значения, окрашивает строку в определенный цвет.</p>
+						<p><b>Атрибуты:</b></p>
+						<ul>
+							<li><i>value</i> - текущее значение (состояние) тега meter. Может также указываться в процентах.</li>
+							<li><i>min</i> - минимальное значение тега meter.</li>
+							<li><i>max</i> - максимальное значение тега meter.</li>
+							<li><i>low</i> - определяет значение, которое ниже указанного в этом атрибуте. Это считается низким значением. Например, если задать значение low равным 33, то этот атрибут определяет то значение, которое ниже 33.
+							optimum - определяет наиболее оптимальное значение тега meter.</li>
+							<li><i>high</i> - определяет наиболее высокое значение тега meter.</li>
+						</ul>
+						<p>Нервное состояние:</p>
+						<p><meter value="20" min="0" max="100" low="33" optimum="14" high="77">хорошее</meter> - хорошее</p>	
+						<p><meter value="54" min="0" max="100" low="33" optimum="14" high="77">волнуется</meter> - волнуется</p>	
+						<p><meter value="80" min="0" max="100" low="33" optimum="14" high="77">может ударить</meter> - может ударить </p>
+						<div class="block_important">
+							<p>Если браузер не понимает теги <span class="tag" >&lt;progress&gt;</span> и <span class="tag">&lt;meter&gt;</span> вместо рисунков он отображает текст, который находится в них.</p>
+						</div>
+						<p><span class="tag">&lt;details&gt;</span> - создаёт спойлер.</p>
+
+						<p><b>Атрибуты:</b></p>
+						<ul>
+							<li>Указывает, что содержимое тега изначально должно быть показано в развернутом виде. Значения для логического атрибута open можно задавать следующими способами:</li>
+						</ul>
+						<div class="code">
+						<img class="star" src="images/process.png" alt="">
+							<span class="tag">&lt;details open&gt;</span><br>
+							<span class="tag">&lt;details open="open"&gt;</span><br>	
+							<span class="tag">&lt;details open=""&gt;</span>	
+						</div>
+						<p><span class="tag">&lt;summary&gt;</span> - создаёт название для спойлера.</p>
+						<details>
+						<summary>Кликни</summary>
+							Поздравляю, вы легко поддаётесь гипнозу.
+						</details>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>За этот день мы познакомились с интересными тегами, при помощи которых, можно сделать небольшую анимацию. Как же стал уже крут HTML !<br>
+							P.S.Размывается уже грань между разметкой и оформлением кода, HTML и CSS 3, атрибуты тегов тому пример. И это здорово,как мне кажется.Когда строгих рамок ещё меньше.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Псевдоэлементы.</h2>
+						<p>Это такая фиговина, которая позволяет использовать какие-то элементы, не добавляя тегов в HTML код.</p>	
+						 <p>Псевдоэлемент <span class="style">::after</span> - добавляет псевдоэлемент в конце тега.</p>	
+						 <p>Псевдоэлемент <span class="style">::before</span> - добавляет псевдоэлемент в начале тега.</p>
+						 <div class="block_chip">
+						 	<p>Когда не нужен текст для псевдоэлементов, вы можете в контенте указать пустой символ или спецсимвол пробела.</p>
+						 </div>
+						
+						<div class="block_important">
+							<p>Псевдоэлементы  <span class="style">::after</span> и <span class="style">::before</span> работают при наличии свойства <span class="style">content</span></p>
+						</div>
+						<p>Псевдоэлемент <span class="style">::first-letter</span> - задает стили для первого символа.</p>
+						<p>Псевдоэлемент <span class="style">::first-line</span> - задает стили для первого строчки.</p>
+						<p><span class="style">::selection</span> - позволяет задавать стили к выделенному тексту.</p>
+						<div class="block_important">
+							<p>Лучше использовать новые псевдоэлементы. Так как они работают во всех браузерах.</p>
+						</div>
+						<div class="block_chip">
+							<p>В браузере мозилла это свойство по умолчанию не работает, однако вы можете использовать ::-moz-selection</p>
+						</div>
+						<p class="pseudo">Вот такая я - псевдоэлементочка! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, atque?</p>
+						<p class="test_cite">Тестовая цитата - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem necessitatibus quasi quo aliquid accusamus consectetur eos culpa ab velit officia. Ullam delectus dolorem accusamus asperiores iusto, saepe tempore ea? Ipsa!</p>
+						<div class="test_cites">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam fugit odio aperiam, ipsum illum excepturi impedit aliquam quidem laboriosam. Vitae error voluptate, vero amet quos magnam cumque laudantium labore veritatis.
+						</div>
+						<div class="block_chip">
+							<p>Вертикальное центрирование (::before)</p>
+							<div class="parent">
+								<span class="child">
+									<h4>Центрированный<br> элемент</h4>
+								</span>
+							</div>
+						</div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>Замечательная штука, эти псевдоэлементы! Ещё один способ размещения гвоздей и кнопок в моём дневничке, кроме множественных фонов. А я как то и не задумывался. А какой же всё таки способ правильней и лучше?</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Псевдоклассы.</h2>
+					 		<p>Псевдоэлемент <span class="style">:first-child </span> - задает стили для первого дочернего элемента своего родителя.</p>
+					 		<p>Псевдоэлемент <span class="style">:last-child </span> - задает стили для последнего дочернего элемента своего родителя.</p>
+					 		<p>Псевдоэлемент <span class="style">:nth-child(значение) </span> - задает стили через нумерацию дочерних элементов родителя.</p>
+					 		<p><b>Значения псевдокласса:</b></p>
+					 		<ul>
+					 			<li><i>odd</i> - применяет стили к нечетным элементам.</li>
+					 			<li><i>even</i> - применяет стили к четным элементам.</li>
+					 			<li><i> число</i> - задает значение определенному элементу.</li>
+					 			<li><i>1</i> - равносилен псевдоклассу  <span class="style">:first-child </span></li>
+					 			<li><i>2n</i> - равносилен значению even.</li>
+					 			<li><i>2n+1</i> - равносилен значению odd.</li>
+					 		</ul>
+					 		
+					 		<div class="block_important">
+					 			<p>
+					 			Как работает: <span class="style">:nth-child(2n+3)</span><br>
+					 			 "2n"- это шаг. Шаг идет через каждые два элемента.<br>
+								А "+3"  - указывает с какого по счету элемента, надо начинать шаг.
+				 			 	</p>
+					 		</div>
+					 		<p>Псевдоэлемент <span class="style">:nth-last-child(значение) </span> - задает стили через нумерацию дочерних элементов родителя начиная с конца.</p>
+					 		<div class="block_important">
+					 			<p>
+					 			Когда мы ему задаем значение равное 1- оно равносильно псевдоклассу  <span class="style">:last-child </span>
+				 			 	</p>
+					 		</div>
+					 	<h3>Тестовый список</h3>
+						<ul class="pseudo-class">
+							<li>Lorem ipsum.</li>
+							<li>Iste, dolore.</li>
+							<li>Eos, obcaecati.</li>
+							<li>Maxime, odio.</li>
+							<li>Placeat, praesentium.</li>
+							<li>Ratione, sapiente.</li>
+							<li>Saepe, sequi!</li>
+							<li>Illo, ex!</li>
+							<li>Officia, qui.</li>
+							<li>Optio, obcaecati.</li>
+						</ul>
+						<p>Псевдоэлемент <span class="style">:nth-child(значение) </span> - задает стили через нумерацию дочерних элементов родителя.</p>
+				 		<p>Псевдоэлемент <span class="style">:nth-last-child(значение) </span> - задает стили через нумерацию дочерних элементов родителя начиная с конца.</p>
+				 		<p class="pseudo-class">
+				 			<b>Нулевой </b>
+				 			<em>Первый </em>
+				 			<em>Второй </em>
+				 			<em>Третьий </em>
+				 		</p>
+			 		<div class="close">
+						<p><b>Заключение:</b> 
+						<p>Сегодня мы узнали что существует такая фиговина, как псевдоэлементы, которая позволяет использовать какие-то новые элементы, не добавляя тегов в HTML код.</p>
+					</div>
+					</div>
+				</section>
+		     	<section>
+		     		<div class="day">
+		     			<h2 id="d4">День 4. Псевдоуникумы...</h2>
+						<p>Псевдокласс <span class="style">:only-child</span> - указывает стили для элементов, которые являются единственными у родителя.</p>
+						<p>Псевдокласс <span class="style">:only-of-type</span> - указывает стили для элементов, которые являются единственными своего типа у родителя.</p>
+						<p>Псевдокласс <span class="style">:empty</span> - указывает стили для элементов, которые являются пустыми.</p>
+						<p>Псевдокласс <span class="style">:not</span> - указывает стили для элементов, которые не имеют указанный селектор.</p>
+						<p class="pseudo-class2">
+							<b>Один</b>
+							<i>Два</i>
+							<u>Три</u>
+							<b>Четыре</b>
+							<ins>Пять</ins>
+							<ins title="six">Шесть</ins>
+							<span></span>
+						</p>
+						<p>Псевдокласс <span class="style">:root</span> - применяет стили ко всему документу. Аналогичен тегу <span class="tag">&lt;html&gt;</span></p>
+						<p>Псевдокласс <span class="style">:target</span> - применяет стили к якорям, по которым мы переходим, причем когда мы уходим из якорей - стили пропадают.</p>
+						<a href="#d1">1</a>
+						<a href="#d2">2</a>
+						<a href="#d3">3</a>
+						<a href="#d4">4</a>
+						<a href="#d5">5</a>
+						<details>
+						<summary>Переменка</summary>
+							<div class="break">
+								<div class="break-font">
+									<h3>Ништяки для веб разработчика.</h3>
+									<h4>Как поставить Browser Sync:</h4>
+									<p>Это такой браузер, который подхватывает ваш код на лету, и вам не нужно постоянно обновлять браузер. Если кто знает, наподобие <b>LiveReload</b>, только гораздо лучше.</p>
+									<p>Для начала нам надо установить Node.js. Зайдите на сам сайт Node.js. Выберите установщик, версии LTS и установите.Это основа. А дальше я решил показать видео от <b>loftblog</b>, потому как лучше один раз увидеть, чем сто раз услышать</p>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/uEtnY7i-rmg" frameborder="0" allowfullscreen><p class="mistake">К сожалению, ваш браузер слишком устарел и не поддерживает технологии HTML5 и CSS3. Вы не сможете посмотреть видео, но вы можете перейти по ссылке: <a class= norm_a href="https://youtu.be/uEtnY7i-rmg">посмотреть видео</a></p>
+									</iframe>
+									<div class="code">
+									<img class="star" src="images/process.png" alt="">
+										<p>Тут напишу код, чтобы его можно было скопировать и не писать ручками. Вводим в консоли:<br>
+										<span class="tag">npm install -g browser-sync</span><br>
+										И еще одна команда:<br>
+										<span class="tag">browser-sync start --server --files "*.*"</span><br>
+										Отслеживает все файлы в данной папке. 
+										</p>
+									</div>
+									<div class="block_important">
+										<p><b>Важно: </b>
+										Если не работает! И выводит:<br> http://localhost:3000/  Cannot GET /﻿</p>
+										<p><b>Решение: </b>Запускать данную команду необходимо из директории с index.
+											К слову чтобы открыть cmd из директории с файлом index.html необходимо зажать shift и щелкнуть ПКМ рядом с файлом (в окне папки) и в контекстном меню появится заветная команда "Открыть окно команд" .﻿
+										</p>
+									</div>
+								</div>
+							</div>
+							<p>Ссылка на плагин - <a class="red" target="_blank" href="http://mizage.com/﻿">divvy</a></p>
+						</details>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>Сегодня продолжали изучать псевдоклассы. Особенно интересен атрибут <span class="style">:target</span>. Ну и еще парочка..</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d5">День 5. Тексты и тени.</h2>
+						<p><span class="style">text-overflow</span> - указывает обрезку текста, который не влазит в блок.</p>
+						<p><b>Значения:</b></p>
+						<ul>
+							<li><i>clip</i> - обрезает текст, который не влазит в блок.</li>
+							<li><i>ellipsis</i> - делает тоже самое, только добавляет в конце троеточие.</li>
+						</ul>
+						<div class="textof">
+							Это обычный текст, который мы будем испытывать на этой странице и в этом абзаце. Вот так !!!
+						</div>
+						<div class="block_important">
+							<p>Это свойство работает, только если свойство <span class="style">overflow</span> имеет значения auto, scroll и hidden.</p>
+						</div>
+						<p><span class="style">word-break</span> - указывает как следует переносить длинные слова.</p>
+						<div class="wb">
+							Этомынаписалицеликомибезпробеловдляэкспериметакоторыйбудемсейчасставить.
+						</div>
+							<p><span class="tag">&lt;wbr&gt;</span> -  указывает браузеру, где необходимо разместить перенос.</p>
+						<div class="wbr">
+							Этомынаписали<wbr>целикомибезпробелов<wbr>дляэкспериметакоторыйбу&shy;дем<wbr>сейчасставить.
+						</div>
+						<div class="block-important">
+							<p>Тег <span class="tag">&lt;wbr&gt;</span> и мягкий перенос слов не работают, если указано свойство <span class="style">word-break: break-all;</span>.</p>
+						</div>
+						<h3>Тени</h3>
+						<p><span class="style">text-shadow</span> - задает тень для текcта.</p>
+						<p style="text-shadow: -5px 5px 2px #777;">Это текст с тенью</p>
+						<p style="text-shadow: 1px 1px 0px #fff, 0px 0px 7px #777; font-size: 27px; font-family: Cuprum;"> Это текст с двойной тенью</p>
+						<p><span class="style">box-shadow</span> - задает тень для элементов сайта.</p>
+						<div class="image">
+							<div class= "lenta"></div>
+							<div class="lenta1"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<hr style="height: 1px; border: none; background: #777; box-shadow: 0 -1px 0 #fafafa"> 
+							<hr style="height: 20px; border: none; background: #777; box-shadow: 0 0 7px #333 inset">
+							<p>Всё отлично понятно. Только не совсем понимаю, как второй картинке задать тень другим способом. Очень хотелось бы узнать.</p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="mid">
+				<div class="mid">
+				<img src="images/logo-foot.png" height="50" width="320" alt="">
+				2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+			</div>
+			</div>
+		</div>
+	</footer>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>	
+		<script>window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+		<script src="js/progressbaranimate.js"></script>
+</body>
+</html>

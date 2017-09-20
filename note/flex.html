@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Test</title>
+    <style>
+        .flex {
+            margin: 10px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            display: flex;
+            height: 500px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: stretch;
+            align-content: center;
+        }
+       
+        .fl {
+            border: 1px solid #999;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 5px 10px;
+            
+        }
+        
+        .cl1 {
+            background: #eee;
+            flex-grow: 3;
+            flex-shrink: 4;
+        }
+        
+        .cl2 {
+            background: #ffc400;
+            flex-grow: 1;
+        }
+        
+        .cl3 {
+            background: #c4dd95;
+            flex-grow: 2;
+        }
+        
+        .cl4 {
+            background: #9fd3ff;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="fl cl1">1 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        <div class="fl cl2">2 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        <div class="fl cl3">3 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        <div class="fl cl4">4 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+    </div>
+    
+</body>
+</html>

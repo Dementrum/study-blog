@@ -1,0 +1,21 @@
+@media only screen and (max-width:1280px) {
+
+}
+@media only screen and (max-width:860px) {
+
+	.mid {
+		width: 800px;
+	}
+
+	.content {
+		width: 45%;
+		margin-left: 20px;
+	}
+
+	.sidebar {
+		margin-right: 200px;
+		float: right;
+		margin-top: 60px
+	}
+
+}

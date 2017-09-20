@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+	<title>Седьмая неделя тренинга</title>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="les.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="mid">
+				<img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
+				<div class="icons">
+					<a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt=""></a>
+					<a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt=""></a>
+					<a href="mailto:dmitrikolesnikov1976@gmail.com" target="_blank"><img src="images/igplus.png" alt=""></a>
+				</div>
+				<div class= "name">Онлайн-дневник Дмитрия Колесникова .</div>
+				<div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div> 
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
+					<li><a href="">Отзыв о тренинге</a></li>
+					<li><a href="form.html">Связаться со мной</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="sidebar week">
+			<div class="widget everyday">
+				<ul>
+					<li><a href="week1.html">Неделя 1 - Ясли</a></li>
+					<li><a href="week2.html">Неделя 2 - Детский сад</a></li>
+					<li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
+					<li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
+					<li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
+					<li><a href="week6.html">Неделя 6 - Выпускники</a></li>
+					<li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+					<li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
+				    <li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
+				</ul>
+			</div>
+			<div class="widget everyday1">
+				<ul>
+					<li><a href="#d1">День 1. Бэкграунды</a></li>
+					<li><a href="#d2">День 2. Градиентус-офигентус.</a></li>
+					<li><a href="#d3">День 3. Радиальное счастье!</a></li>
+					<li><a href="#d4">День 4. Глюкофор.</a></li>
+					<li><a href="#d5">День 5. Метаморфозы.</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<article>
+				<header>
+					<h1>Неделя 7 - Реформаторы</h1>
+				</header>
+				<section>
+					<div class="day">
+						<h2 id="d1">День 1. Бэкграунды</h2>
+						<p>В CSS3 стало намного удобнее работать с фоновыми изображениями для блоков.</p>
+						<p>Во-первых, мы уже можем задавать множественные фоновые изображения.</p>
+						<p><span class="style">background-size</span> - позволяет управлять размером фоновых изображений.</p>
+						<p><b>Значение:</b></p>
+						<ul>
+							<li><i>auto</i> - применяется автоматически, как и должна работать нормально картинка. При этом соблюдаются все пропорции.</li>
+							<li><i>cover</i> - растягивает картинку по большей стороне блока, с соблюдением пропорций.</li>
+							<li><i>contain</i> - задает размер для картинки такой, чтобы она полностью уместилась в блоке.</li>
+							<li><i>проценты</i> - задаем размер в процентах.</li>
+							<li><i>точные значения</i> - задает размер в px, em, cm...</li>
+						</ul>
+						<p><b>Значение:</b></p>
+						<ul>
+							<li><i>padding-box</i> - фоновая картинка позиционируется относительно внутренних полей.</li>
+							<li><i>border-box</i> - фоновая картинка позиционируется относительно границы.</li>
+							<li><i>content-box</i> -  фоновая картинка позиционируется относительно рабочей области.</li>
+						
+						</ul>
+						<p><span class="style">background-origin</span> - позиционирует фоновые картинки относительно границ и отступов блока.</p>
+						<p><span class="style">background-clip</span> - задает правила обработки фона ЦЕЛИКОМ (даже цвета). И если что-то выходит за рамки - оно обрезается. Значения такие же, как и у <span class="style">background-origin</span>.</p>
+						<div class="bgtest"></div>
+						<h3>Домашка</h3>
+						<div class="flower" title="Мой корявый цветок"></div>
+						<div class="flower1" title="Cерёгин правильный"></div>
+						<div class="clear"></div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>Домашка супер!!! Очень понравилась!</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Градиентус-офигентус</h2>
+						<p>В CSS3 появилось множество возможностей управления и задания градиентами.</p>
+						<p><span class="style">linear-gradient</span> - он задает радиальный градиент.</p>
+						<div class="block_important">
+							<p>Градиент задается через свойство background (background-image) и он является картинкой, которую генерирует браузер согласно коду.</p>
+						</div>
+						<p>Обычный, самый простой градиент:</p>
+						<div class="grad"></div>
+						<p>Градиент с наклоном:</p>
+						<div class="grad2"></div>
+						<p>Градиент с контролируемым переходом:</p>
+						<div class="grad3"></div>
+						<p>Контролируем размеры и повторения и местоположение:</p>
+						<div class="grad4"></div>
+						<p>Прозрачность и треугольность:</p>
+						<div class="grad5"></div>
+						<p>Множественные градиенты:</p>
+						<div class="grad6"></div>
+						<h3>Домашка</h3>
+						<div class="grad7"></div>
+						<div class="grad8"></div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>Заморочился с этими градиентами, жуть просто. Половину подглядел, но всё таки понял. Решение простое, но надо понять как они работают, эти градиенты. Это главное!</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Радиальное счастье!</h2>
+					 	<p>В CSS3 мы можем задавать и радиальные градиенты. И делается это также, как и с линейными градиентами.</p>
+					 	<div class="block_important">
+							<p>Градиент задается через свойство background (background-image) и он является картинкой, которую генерирует браузер согласно коду.</p>
+						</div>
+						<p><span class="style">radial-gradient</span> - он задает радиальный градиент.</p>
+						<div class="rgrad1"></div>
+						<p> Радиальный градиент имеет два вида - круглый (картинка снизу), эллиптический (картинка сверху). А может и наоборот :) </p>
+						<p><b>Значения :</b></p>
+					 		<ul>
+					 			<li><i>circle</i> - круг.</li>
+					 			<li><i>ellipse</i> - эллипс.</li>
+					 		</ul>
+						<div class="rgrad2"></div>
+							<div class="block_important">
+							<p>Квадратам всё пофигу!</p>
+							<p>Для элемента, у которого ширина равна высоте, разница между типами градиента будет незаметна.</p>
+						</div>	
+						<div class="block_important">
+							<p>В зависимости от блока радиальный градиент может быть эллиптическим, или круглым. По умолчанию он просто растягивается на свой блок. И мы можем влиять на этот параметр.</p>
+						</div>
+						<p>Позиционирование:</p>
+						<p><b>Значения :</b></p>
+					 		<ul>
+					 			<li><i>at</i> - Положение градиента (положение его центра) задается первым параметром at. Позиция точки пишется аналогично значениям свойства background-position с помощью ключевых слов или доступных единиц измерения вроде пикселов или процентов; ниже приведен пример:</li>
+					 			<li><i>at top left = at left top = at 0% 0% (в левом верхнем углу)</i></li>
+					 		</ul>
+						<div class="rgrad3"></div>
+						<p>Размеры градиента:</p>
+						<p><b>Значения :</b></p>
+					 		<ul>
+					 			<li><i>closest-side</i> — Ближайшая сторона. Градиент распространяется от центра по направлению к ближайшей стороне элемента (для circle), или к обоим, горизонтальной и вертикальной сторонам (для ellipse).</li>
+					 			<li><i>closest-corner</i> — Ближайший угол. Размер градиента таков, что он распространяется от центра к ближайшему углу элемента.</li>
+					 			<li><i>farthest-side</i> - Самая дальняя сторона. Градиент распространяется от центра по направлению к наиболее удаленной стороне элемента (для circle), или к обоим, горизонтальной и вертикальной, сторонам (для ellipse).</li>
+					 			<li><i>farthest-corner</i> -  Самый дальний угол. Размер градиента таков, что он распространяется от центра к самому дальнему углу элемента.</li>
+					 			<li><i>contain</i> -  Аналогично <b>closest-side</b></li>
+					 			<li><i>cover</i> -  Аналогично <b>farthest-corner</b></li>
+					 		</ul>
+					 		<img src="http://htmlbook.ru/files/images/css3/radial-gradient-size.png" alt="Синтаксис radial-gradient" width="600" height="67">
+						<div class="rgrad4"></div>
+						<p>Размножаемся и растем:</p>	
+						<div class="rgrad5"></div>
+						<h3>Домашка:</h3>		
+						<div class="light"></div>	
+				 		<div class="close">
+							<p><b>Заключение:</b></p> 
+							<p>Немного запутано и надо поразбираться, но оно того стоит!!!</p>
+						</div>
+					</div>
+				</section>
+		     	<section>
+		     		<div class="day">
+		     			<h2 id="d4">День 4. Глюкофор.</h2>
+		     			<p>В CSS3 можно задавать полупрозрачнык цвета. При помощи свойств задания цвета RGBA и HSLA.</p>
+		     			<div class="signal"></div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>Глюкофор получился зачетный!</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d5">День 5. Метаморфозы.</h2>
+						<p>Когда мы используем псевдоклассы наподобие <span class="style">hover</span>, мы можем анимировать смену стилей.</p>
+						<p><span class="style">transition</span> - позволяет анимировать переход в стилях.</p>
+						<div class="trans">transition: width 2.2s ease-in 1s;</div>
+						<div class="block_important">
+							<p>Иногда свойство плавного перехода не работает, если мы указываем не точную величину. </p>
+						</div>
+						<p><span class="style">transition-duration</span> - указывает время проигрывания анимации. Используется время в секундах.</p>
+						<p><span class="style">transition-property</span> - указывает стили, к которым применяется анимация.</p>
+						<p><span class="style">transition-delay</span> - указывает время задержки перед анимацией.</p>
+						<p><span class="style">transition-timing-function</span> - указывает тип анимации.</p>
+						<p>Все эти свойства мы можем записывать отдельно, а можем и одним свойством.</p>
+						<div class="code">
+						<img class="star" src="images/process.png" alt="">
+							transition: transition-property transition-duration transition-timing-function transition-delay;
+						</div>
+						<div class="trans2">transition</div>
+						<div class="close">
+							<p><b>Заключение:</b> 
+							<p>В этом уроке мы разобрали свойство transition и научились создавать самые элементарные типы анимаций. Сайты с анимацией смотрятся всегда более органично. Но, конечно всё должно быть в меру.</p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="mid">
+				<div class="mid">
+				<img src="images/logo-foot.png" height="50" width="320" alt="">
+				2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+			</div>
+			</div>
+		</div>
+	</footer>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>	
+		<script>window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+		<script src="js/progressbaranimate.js"></script>
+</body>
+</html>

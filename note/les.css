@@ -1,0 +1,1246 @@
+/*  Учебные стили */
+
+
+/*Learning styles*/
+
+
+/*Селекторы тегов*/
+
+
+/*Tag selectors*/
+
+
+/*Классы*/
+
+
+/*Classes*/
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}
+
+.fblock {
+    background: #EDE506;
+    border: 1px solid #B2AF50;
+}
+
+.border {
+    width: 300px;
+    border: 10px solid #4511e7;
+    background: #ab9bdf;
+}
+
+.border2 {
+    width: 300px;
+    border-top: 10px double #4511e7;
+    border-bottom: 5px solid #DE00AE;
+    border-left: 15px solid #3A9CE2;
+    border-right: 7px double #88FF00;
+    background: #efefef;
+}
+
+.block {
+    background: #efefef;
+    border: 1px solid #ccc;
+    width: 500px;
+}
+
+.block2 {
+    background: #EDE506;
+    border: 1px solid #B2AF50;
+    width: 50%;
+}
+
+.block3 {
+    background: #EDE506;
+    border: 1px solid #B2AF50;
+    width: 300px;
+    padding: 20px;
+}
+
+.block4 {
+    background: #efefef;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin: 30px;
+    float: left;
+}
+
+.block5 {
+    background: #EDE506;
+    border: 1px solid #B2AF50;
+    width: 200px;
+    margin: 30px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*Идентификаторы*/
+
+
+/*Identifiers*/
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
+
+#blue {
+    color: blue;
+}
+
+#black {
+    color: black;
+}
+
+#orange {
+    color: orange;
+}
+
+
+/* Селекторы атрибутов */
+
+
+/*Attribute selectors*/
+
+[width] {
+    border-color: red;
+}
+
+[width="700"] {
+    border-color: green;
+}
+
+[title="И чего он такого желает???"] {
+    color: yellow;
+}
+
+[title="fazan"] {
+    color: purple;
+}
+
+
+/* Контексные селекторы */
+
+
+/*Contextual selectors*/
+
+p.example b i {
+    color: purple;
+}
+
+p.example b i u {
+    color: red;
+}
+
+b.purple {
+    color: purple;
+}
+
+
+/* Дочерние селекторы */
+
+
+/*Child selectors*/
+
+p.example b>u {
+    color: green;
+}
+
+
+/* Соседние селекторы */
+
+
+/*Neighbor selectors*/
+
+p.example b+i {
+    color: blue;
+}
+
+p.example i+u {
+    color: orange;
+}
+
+p.example i+u+s {
+    color: red;
+}
+
+
+/* Пседокласс */
+
+
+/*Pseudoclass*/
+
+i:first-child {
+    color: purple;
+}
+
+
+/* Домашка */
+
+
+/*Homework*/
+
+.dz1 b {
+    color: yellow;
+}
+
+.dz1 b+s {
+    color: purple;
+}
+
+.dz1 i {
+    color: green;
+}
+
+.dz1 i+u {
+    color: red;
+}
+
+.dz1 u {
+    color: blue;
+}
+
+.dz1 u s {
+    color: grey;
+}
+
+.dz1 s b {
+    color: gray;
+}
+
+
+/* Домашка для продвинутых*/
+
+
+/*Homework for advanced*/
+
+.dz2 i {
+    color: red;
+}
+
+.dz2 :nth-child(2) {
+    color: orange;
+}
+
+.dz2 :nth-child(3) {
+    color: yellow;
+}
+
+.dz2 i+i+i+i {
+    color: green;
+}
+
+.dz2 i+i+i+i+i {
+    color: aqua;
+}
+
+.dz2 i+i+i+i+i+i {
+    color: blue;
+}
+
+.dz2 i+i+i+i+i+i+i {
+    color: purple;
+}
+
+
+/*Тестовые стили для форм*/
+
+
+/*Test styles for forms*/
+
+.form_aside {
+    background: #f5f5f5 url(images/lineika.jpg) -30px 42px;
+    border: 3px double #BFBFBF;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0 0 30px;
+    line-height: 27px;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form {
+    border: 1px solid #aeadb7;
+    color: #504c34;
+    box-shadow: 3px 3px 3px #adadad;
+    padding: 10px 20px 20px 20px;
+}
+
+.name_form {
+    border-bottom: 1px dotted #555;
+}
+
+.form_test {
+    border: 3px double #BFBFBF;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.form_test span {
+    display: inline-block;
+    width: 175px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.form_test input {
+    width: 200px;
+    padding: 6px 0 6px 10px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.form_test input:focus {
+    border: 1px solid #88afc5;
+    color: #1B6D9C;
+}
+
+.form_test textarea {
+    width: 90%;
+    height: 70px;
+    resize: none;
+    margin: 10px;
+    padding: 8px;
+}
+
+.form_test textarea:focus {
+    color: #1B6D9C;
+}
+
+.form_test label {
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+input.form_button {
+    width: 140px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    margin: 0 44px 0 13px;
+}
+
+.form_button:hover {
+    background: #6099b9;
+    box-shadow: inset 0 0 0 1px #1B6D9C;
+    transition: color 0.75s;
+    transition: background 0.75s;
+    border-radius: 13px;
+    color: #fff;
+}
+
+
+/* figure */
+
+figure {
+    margin: 0;
+    background: #afda55;
+    padding: 10px;
+}
+
+.k-1 {
+    float: left;
+}
+
+.k-2,
+.k-3,
+.sert {
+    float: right;
+}
+
+.k-2 {
+    margin-bottom: 10px;
+}
+
+figcaption {
+    margin: 10px 0 0 0;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* progressbar */
+
+#progressbar {
+    background: #85FFD6;
+    color: #6DAFED;
+    border: none;
+    width: 250px;
+    height: 8px;
+}
+
+webkit-progress-bar {
+    #progressbar: :- background: #85FFD6;
+}
+
+#progressbar::-webkit-progress-value {
+    background: #6DAFED;
+}
+
+#progressbar::-moz-progress-bar {
+    background: #6DAFED;
+}
+
+
+/*Тестируем псевдоэлементы*/
+
+
+/*Test pseudo-elements*/
+
+.pseudo::after {
+    content: " И точка! ";
+}
+
+.pseudo::before {
+    content: " Привет! ";
+}
+
+.pseudo::first-letter {
+    font-size: 24px;
+    font-family: Cuprum;
+    color: #FF6B0F;
+}
+
+.pseudo::first-line {
+    color: #777;
+}
+
+.pseudo::selection {
+    color: #aaa;
+    background: #4e4e4e;
+}
+
+.pseudo::-moz-selection {
+    color: #aaa;
+    background: #4e4e4e;
+}
+
+.test_cite,
+.test_cites {
+    position: relative;
+    background: #e8e2ec;
+    padding: 20px 50px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.test_cite {
+    quotes: "\201c" "\201d";
+}
+
+.test_cite::before,
+.test_cite::after {
+    background: #c3bfbf;
+    width: 25px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.test_cite::before {
+    content: open-quote;
+    left: 10px;
+    right: 20px;
+}
+
+.test_cite::after {
+    content: close-quote;
+    right: 20px;
+    bottom: 20px;
+}
+
+.test_cites {
+    padding-left: 82px;
+}
+
+.test_cites::before {
+    content: url("images/icons-small.png");
+    position: absolute;
+    left: 15px;
+    right: 20px;
+}
+
+.test_cites::after {
+    content: url("images/icons-small1.png");
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+/* Тестируем псевдоклассы */
+
+
+/* Test pseudo-classes */
+
+.pseudo-class li:first-child {
+    font-style: italic;
+}
+
+.pseudo-class li:last-child {
+    font-style: italic;
+}
+
+.pseudo-class li:nth-of-type(1) {
+    color: red;
+}
+
+.pseudo-class li:nth-last-of-type(1) {
+    color: red;
+}
+
+p.pseudo-class em:nth-of-type(2) {
+    color: red;
+}
+
+.pseudo-class2 b:only-child {
+    color: red;
+}
+
+.pseudo-class2 b:only-of-type {
+    color: red;
+}
+
+.pseudo-class2 span:empty {
+    background: red;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.pseudo-class2 ins:not([title]) {
+    color: red;
+}
+
+.textof {
+    background: #FFD680;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wb {
+    background: #FFD680;
+    width: 200px;
+    word-break: break-all;
+}
+
+.wbr {
+    background: #FFD680;
+    width: 200px;
+}
+
+
+/*:root {
+	text-decoration: underline;
+}*/
+
+
+/* Vertical centering */
+
+
+/* Вертикальное центрирование */
+
+.parent {
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.parent::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.child {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid white;
+}
+
+.parent {
+    text-align: center;
+}
+
+
+/*Тестируем бэкграунды*/
+
+
+/*Test backgrounds*/
+
+.bgtest {
+    height: 200px;
+    border: 10px dotted #ccc;
+    margin: 30px;
+    padding: 20px;
+    background: url(images/fbody.png) no-repeat left bottom, url(images/color.png) no-repeat left top, url(images/checkbox.png) no-repeat right bottom;
+    background-color: #efefef;
+    background-size: auto, 200px, 300px;
+    background-origin: border-box;
+    background-clip: content-box;
+}
+
+.flower {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(images/bg.png) no-repeat center 47%, url(images/bg.png) no-repeat center 53%, url(images/fhead.png) no-repeat 66% 70%, url(images/fbody.png) no-repeat 35% 68%, url(images/fhead.png) no-repeat 34% 34%, url(images/fbody.png) no-repeat 65% 36%;
+    background-size: 30px, 30px, 50px, 55px, 50px, 55px, 20px, 30px;
+    background-color: #e8e10a;
+    margin-left: 20px;
+    border: 23px dashed #BE240F;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+
+.flower1 {
+    height: 120px;
+    width: 120px;
+    border: 30px dashed #B60101;
+    margin: 13px;
+    padding: 20px;
+    background: url(images/bg.png) no-repeat center, url(images/fbody.png) no-repeat left bottom, url(images/fbody.png) no-repeat right top, url(images/fhead.png) no-repeat left top, url(images/fhead.png) no-repeat right bottom;
+    background-color: #EFE025;
+    background-size: 30px 30px, auto, auto, auto, auto;
+    background-origin: content-box;
+    box-shadow: 2px 2px 7px -2px #333;
+    float: right;
+}
+
+
+/*Градиенты*/
+
+
+/*Gradints*/
+
+.grad {
+    height: 100px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #fff, #000);
+}
+
+.grad2 {
+    height: 100px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(135deg, #fff, #000);
+}
+
+.grad3 {
+    height: 100px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(135deg, #FF3A37 33%, #46D37A 33%, #46D37A 66%, #3AB2E2 66%);
+}
+
+.grad4 {
+    height: 100px;
+    background-color: #ddd;
+    background-image: linear-gradient(135deg, #FF3A37 33%, #46D37A 33%, #46D37A 66%, #3AB2E2 66%);
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+}
+
+.grad5 {
+    height: 100px;
+    background-color: #444;
+    background-image: linear-gradient(135deg, #eee, #ccc 45%, #222 45%, transparent 50%);
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+.grad6 {
+    height: 100px;
+    background: linear-gradient(135deg, #eee, #ccc 25%, transparent 25%) 25px 25px, linear-gradient(225deg, #eee, #ccc 25%, transparent 25%) -25px 25px, linear-gradient(315deg, #eee, #ccc 25%, transparent 25%) -25px -25px, linear-gradient(45deg, #eee, #ccc 25%, transparent 25%) 25px -25px;
+    background-color: #444;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+
+.grad7 {
+    height: 100px;
+    background: linear-gradient(90deg, #F78852 20%, #F6BA4B 20%, #F6BA4B 40%, #9EDE4D 40%, #9EDE4D 60%, #3AB2E2 60%, #3AB2E2 80%, #D867F3 80%) left center, linear-gradient(90deg, #eee 50%, #444 50%) center 5px, linear-gradient(90deg, #eee 50%, #444 50%) center 90px;
+    border: 1px solid #333;
+    background-size: 100% 70%, 20px 5px, 20px 5px;
+    border-right: none;
+    border-left: none;
+    background-repeat: repeat-x;
+    background-color: #444;
+}
+
+.grad8 {
+    height: 100px;
+    background: linear-gradient(180deg, #963207, #F78852, #f3b598, #F78852, #963207) 0, linear-gradient(180deg, #946103, #F6BA4B, #e8cd99, #F6BA4B, #946103) 122px, linear-gradient(180deg, #5e7343, #9EDE4D, #cfeaac, #9EDE4D, #5e7343) 244px, linear-gradient(180deg, #63828e, #3AB2E2, #89d2ef, #3AB2E2, #63828e) 365px, linear-gradient(180deg, #896592, #D867F3, #e7b5f3, #D867F3, #896592) 487px, linear-gradient(90deg, #eee 50%, #444 50%) center 5px, linear-gradient(90deg, #eee 50%, #444 50%) center 90px;
+    border: 1px solid #333;
+    background-size: 20% 70px, 20% 70px, 20% 70px, 20% 70px, 21% 70px, 20px 5px, 20px 5px;
+    border-right: none;
+    border-left: none;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x;
+    background-color: #444;
+    margin-top: 30px;
+}
+
+.rgrad1 {
+    height: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(circle, #fff, #444);
+}
+
+.rgrad2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(ellipse, #fff, #444);
+}
+
+.rgrad3 {
+    height: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(circle at top left, #fff, #444);
+    background-repeat: no-repeat;
+}
+
+.rgrad4 {
+    height: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(circle closest-corner at 250px 0, #fff, #444);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.rgrad5 {
+    height: 100px;
+    border: 1px solid #333;
+    background: radial-gradient(#333, #222 21%, #eee 23%, transparent 25%) 0 0, radial-gradient(#ccc, #666 21%, #eee 21%, transparent 25%) 25px 0, radial-gradient(#ccc, #666 21%, #eee 21%, transparent 25%) -25px 0, radial-gradient(#ccc, #666 21%, #eee 21%, transparent 25%) 0 25px, radial-gradient(#ccc, #666 21%, #eee 21%, transparent 25%) 0 -25px;
+    background-size: 100px 100px;
+    background-color: #444;
+    background-repeat: repeat;
+}
+
+.light {
+    width: 150px;
+    height: 450px;
+    border: 7px solid #777;
+    background: radial-gradient(#d21717, #693232 21%, #eee 21%, transparent 25%) -75px -60px, radial-gradient(#FFEB3B, #7d7849 21%, #eee 21%, transparent 25%) -75px 75px, radial-gradient(#4CAF50, #375a38 21%, #eee 21%, transparent 25%) -75px 215px;
+    background-size: 300px 300px;
+    background-color: #444;
+    margin: 0 auto;
+    border-radius: 80px;
+    background-repeat: no-repeat;
+}
+
+.signal {
+    height: 470px;
+    width: 150px;
+    border: 7px solid #777;
+    border-radius: 80px;
+    background: radial-gradient(hsla(0, 100%, 40%, 0.9) 5px, hsla(0, 100%, 20%, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) center top no-repeat, radial-gradient(rgba(255, 114, 0, 0.9) 5px, rgba(216, 50, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) center no-repeat, radial-gradient(rgba(66, 165, 0, 0.9) 5px, rgba(7, 119, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(140deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+    background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+    background-color: #444;
+    margin: 0 auto;
+}
+
+.signal2 {
+    margin-top: 30px;
+}
+
+.signal2:hover {
+    animation: light 3s;
+}
+
+@keyframes light {
+    0% {}
+    25% {
+        background: radial-gradient(hsla(0, 100%, 43%, 1) 5px, hsla(0, 100%, 23%, 1) 44px, hsla(0, 0%, 47%, 1) 45px, hsla(0, 0%, 47%, 1) 48px, transparent 48px) center top no-repeat, radial-gradient(rgba(255, 144, 0, 0.9) 5px, rgba(216, 50, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center no-repeat, radial-gradient(rgba(66, 165, 0, 0.9) 5px, rgba(7, 119, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(135deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+        background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+        background-color: #444;
+    }
+    50% {
+        background: radial-gradient(hsla(0, 100%, 20%, 0.9) 5px, hsla(0, 100%, 20%, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center top no-repeat, radial-gradient(rgba(255, 144, 0, 1) 5px, rgba(216, 50, 0, 1) 44px, hsla(0, 0%, 47%, 1) 45px, hsla(0, 0%, 47%, 1) 48px, transparent 48px) center no-repeat, radial-gradient(rgba(66, 165, 0, 0.9) 5px, rgba(7, 119, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(135deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+        background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+        background-color: #444;
+    }
+    75% {
+        background: radial-gradient(hsla(0, 100%, 20%, 0.9) 5px, hsla(0, 100%, 20%, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center top no-repeat, radial-gradient(rgba(255, 144, 0, 0.9) 5px, rgba(216, 50, 0, 0.6) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center no-repeat, radial-gradient(rgba(66, 165, 0, 1) 5px, rgba(7, 119, 0, 1) 44px, hsla(0, 0%, 47%, 1) 45px, hsla(0, 0%, 47%, 1) 48px, transparent 48px) center bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(135deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+        background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+        background-color: #444;
+    }
+    100% {
+        background: radial-gradient(hsla(0, 100%, 20%, 0.9) 5px, hsla(0, 100%, 20%, 0.9) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center top no-repeat, radial-gradient(rgba(255, 144, 0, 0.9) 5px, rgba(216, 50, 0, 0.9) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 48px) center no-repeat, radial-gradient(rgba(66, 165, 0, 1) 5px, rgba(7, 119, 0, 1) 44px, hsla(0, 0%, 47%, 1) 45px, hsla(0, 0%, 47%, 1) 48px, transparent 48px) center bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(135deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+        background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+        background-color: #444;
+    }
+}
+
+.signal:hover {
+    background: radial-gradient(hsla(0, 100%, 40%, 1) 5px, hsla(0, 100%, 20%, 0.9) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) center top no-repeat, radial-gradient(rgba(255, 114, 0, 1) 5px, rgba(216, 50, 0, 0.9) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) center no-repeat, radial-gradient(rgba(66, 165, 0, 1) 5px, rgba(7, 119, 0, 0.9) 44px, hsla(0, 0%, 47%, 0.9) 45px, hsla(0, 0%, 47%, 0.9) 48px, transparent 49px) bottom no-repeat, linear-gradient(45deg, transparent 5px, #555 5px, #555 6px, transparent 6px), linear-gradient(140deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+    background-size: 200px 200px, 200px 200px, 200px 200px, 14px 14px, 14px 14px;
+    background-color: #444;
+}
+
+
+/*Transition*/
+
+.trans {
+    background: #E4AC03;
+    border: 1px solid #B78A02;
+    width: 220px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-style: italic;
+    transition: width 2.2s ease-in 1s;
+    cursor: pointer;
+}
+
+.trans:hover {
+    width: 570px;
+    color: #fff;
+}
+
+.trans2 {
+    background: #E4AC03;
+    border: 1px solid #B78A02;
+    width: 220px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    transition: width 2.2s ease-in 1s, background 2s, border 2s, color linear 4s;
+}
+
+.trans2:hover {
+    width: 570px;
+    color: #fff;
+    background: #0A7BFA;
+    border: 1px solid #0459B7;
+}
+
+.anime .mbez {
+    width: 250px;
+    background: #E4AC03;
+    border: 1px solid #B78A02;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.anime:hover .mbez {
+    width: 570px;
+}
+
+.mbez2 {
+    background: #E4AC03;
+    border: 1px solid #B78A02;
+    width: 220px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    transition: width 3s steps(5);
+}
+
+.mbez2:hover {
+    width: 570px;
+    transition: width 3s steps(100);
+}
+
+
+/*transform*/
+
+
+/*Трансформирование*/
+
+.transformer {
+    background: #555;
+    border: 1px solid #444;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transform: rotate(30deg);
+}
+
+.transform {
+    background: #555;
+    border: 1px solid #444;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transform: translate(200px, -10px);
+}
+
+.transform2 {
+    background: #555;
+    border: 1px solid #444;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transform: scale(-1, -1);
+}
+
+.transform3 {
+    background: #555;
+    border: 1px solid #444;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transform: skew(10deg, -10deg);
+}
+
+.transform4 {
+    background: #555;
+    border: 1px solid #444;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transform: rotate(40deg);
+}
+
+.transform5 {
+    background: #555;
+    border: 1px solid #444;
+    width: 50px;
+    height: 50px;
+    line-height: 7px;
+    font-size: 4px;
+    padding: 2px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 7px #111;
+    box-shadow: 2px 2px 7px -1px #777;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.transform5:hover {
+    transform: rotate(360deg) translate(25px, -25px) scale(4, 4);
+}
+
+.cube {
+    width: 50px;
+    height: 25px;
+    background: #3A3738;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    margin-left: 150px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.cube1:hover {
+    transform: scaleX(3);
+    background: #8D0084;
+    border-radius: 0;
+}
+
+.cube2:hover {
+    transform: translateX(-25px);
+    background: #638008;
+}
+
+.cube3:hover {
+    transform: rotate(45deg) scale(2);
+    background: #B00206;
+}
+
+.cube4:hover {
+    transform: translateX(-30px) rotate(-90deg);
+    background: #067A86;
+}
+
+.block_anime .cub1 {
+    transition-delay: 0.2s;
+}
+
+.block_anime .cub2 {
+    transition-delay: 0.4s;
+}
+
+.block_anime .cub3 {
+    transition-delay: 0.6s;
+}
+
+.block_anime .cub4 {
+    transition-delay: 0.8s;
+}
+
+.block_anime:hover .cub1 {
+    transform: translate(120px);
+    width: 300px;
+    background: #8D0084;
+    transition-delay: 0.2s;
+}
+
+.block_anime:hover .cub2 {
+    transform: translate(120px);
+    width: 300px;
+    background: #638008;
+    transition-delay: 0.4s;
+}
+
+.block_anime:hover .cub3 {
+    transform: translate(120px);
+    width: 300px;
+    background: #B00206;
+    transition-delay: 0.6s;
+}
+
+.block_anime:hover .cub4 {
+    transform: translate(120px);
+    width: 300px;
+    background: #067A86;
+    transition-delay: 0.8s;
+}
+
+
+/*Покадровая анимация*/
+
+
+/*frame animation*/
+
+.animate {
+    width: 200px;
+    background: #ccc;
+    border: 1px solid #bbb;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.animate:hover {
+    animation: accordion 2s;
+}
+
+@keyframes accordion {
+    from {}
+    to {
+        width: 400px;
+        border-radius: 20px;
+        transform: rotate(3deg);
+    }
+}
+
+.animate2 {
+    width: 200px;
+    background: #ccc;
+    border: 1px solid #bbb;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.animate2:hover {
+    animation: dance 2s;
+}
+
+@keyframes dance {
+    0% {}
+    25% {
+        width: 250px;
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    65% {
+        transform: rotate(3deg);
+    }
+    80% {
+        width: 250px;
+        transform: rotate(-3deg);
+    }
+    100% {}
+}
+
+.animate3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #aaa;
+    border: 1px solid #999;
+    border-radius: 50%;
+    outline: none;
+    left: 8px;
+    top: 0;
+}
+
+.start {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.triangle:after {
+    position: absolute;
+    content: "";
+    border-top: 100px solid transparent;
+    border-left: 50px solid #fff;
+    border-bottom: 100px solid transparent;
+}
+
+.triangle:before {
+    position: absolute;
+    content: "";
+    margin-left: 1px;
+    border-top: 100px solid transparent;
+    border-left: 50px solid #999;
+    border-bottom: 100px solid transparent;
+}
+
+.start:hover .animate3 {
+    animation: drive 5s;
+}
+
+@keyframes drive {
+    0% {}
+    25% {
+        left: 478px;
+        top: 0;
+    }
+    50% {
+        top: 178px;
+        left: 478px;
+    }
+    75% {
+        top: 178px;
+        left: 8px;
+    }
+    90% {
+        left: 55px;
+        top: 85px;
+    }
+    100% {}
+}
+
+.animate4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border: 1px solid #999;
+    left: 0px;
+    top: 0;
+}
+
+.start2 {
+    width: 500px;
+    height: 22px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    background: #aaa;
+}
+
+.start2:hover .animate4 {
+    animation: test 2s ease-in 2s 2 alternate both;
+}
+
+@keyframes test {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 478px;
+    }
+}
+
+.animate5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border: 1px solid #999;
+    left: 0px;
+    top: 0;
+    animation: test 2s ease-in 2s infinite alternate;
+}
+
+.start3:hover .animate5 {
+    animation-play-state: paused;
+}
+
+.start3 {
+    width: 500px;
+    height: 22px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    background: #aaa;
+}
+
+@keyframes test {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 478px;
+    }
+}

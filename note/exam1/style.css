@@ -1,0 +1,35 @@
+
+body {
+	background:
+	linear-gradient(#404040 1px, transparent 1px),
+	linear-gradient(#373737 1px, transparent 1px),
+	linear-gradient(90deg, #404040 1px, transparent 1px),
+	linear-gradient(90deg, #373737 1px, transparent 1px);
+	background-color: #333;
+	background-size: 60px 60px, 20px 20px, 60px 60px, 20px 20px;
+}
+h1, h2, h3 {
+	text-align: center;
+	margin-bottom: 0;
+}
+h2 {
+	color: #d76767;
+}
+h1 {
+	color: #0093ae;
+}
+h3 {
+	
+}
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+}
+.head {
+	background: #272727;
+}
+.content {
+	background: #fff;
+}

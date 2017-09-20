@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox home</title>
+    <style>
+        .flex {
+            margin: 10px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            display: flex;
+            height: 500px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+        .home-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            border: 1px solid #bbb;
+            
+        }
+        .container {
+            width: 300px; 
+            border: 1px solid #bbb;
+            margin: 10px;
+            padding: 10px;
+        }
+        .container_flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: stretch;
+            height: 300px;
+        }
+        
+        .container_flex2 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 300px;
+        }
+        
+        .fl {
+            border: 1px solid #999;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 5px 10px;
+           
+        }
+        
+        .cl1 {
+            background: #eee;
+        }
+        
+        .cl2 {
+            background: #ffc400;
+        }
+        
+        .cl3 {
+            background: #c4dd95;
+        }
+        
+        .cl4 {
+            background: #9fd3ff;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="home-flex">
+        <div class="container">
+           <div class="container_flex">
+                <div class="fl cl1">1</div>
+                <div class="fl cl2">2</div>
+                <div class="fl cl3">3</div>
+                <div class="fl cl4">4</div>
+            </div>
+        </div>
+        <div class="container">
+           <div class="container_flex2">
+                <div class="fl cl1">1</div>
+                <div class="fl cl2">2</div>
+                <div class="fl cl3">3</div>
+                <div class="fl cl4">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

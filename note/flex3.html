@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox3</title>
+    <style>
+        .flex {
+            margin: 0 auto;
+            border: none;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .flex1 {
+            margin: 50px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        
+        .flex2 {
+            margin: 10px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .checkboard {
+            margin: 10px;
+            border: 8px solid #bbb;
+            border-radius: 3px;
+            height: 490px;
+            width: 560px;
+        }
+        
+        .line1 {
+            display: flex;
+        }
+        
+        .line1 .square:first-child {
+            border-radius: 0 4px 4px;
+        }
+        
+        .line2 .square:last-child {
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .line2 {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 -70px 0 0;
+        }
+        
+        .square {
+            width: 70px;
+            height: 70px;
+            background-color: #777;
+            margin: 0px 70px 0 0;
+            border-radius: 4px
+        }
+        
+        .fl {
+            border: 1px solid #999;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 5px 10px;
+            width: 70px;
+            height: 70px;
+        }
+        
+        .f2 {
+            border: 1px solid #999;
+            border-radius: 3px;
+            margin: 1px;
+            padding: 5px 10px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .cl1 {
+            background: #eee;
+        }
+        
+        .cl2 {
+            background: #ffc400;
+        }
+        
+        .cl3 {
+            background: #c4dd95;
+        }
+        
+        .cl4 {
+            background: #9fd3ff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex1">
+            <div class="fl cl1">1</div>
+            <div class="fl cl2">2</div>
+            <div class="fl cl3">3</div>
+            <div class="fl cl4">4</div>
+        </div>
+
+        <div class="flex2">
+            <div class="f2 cl1">1</div>
+            <div class="f2 cl2">2</div>
+            <div class="f2 cl3">3</div>
+            <div class="f2 cl4">4</div>
+        </div>
+        <div class="checkboard">
+            <div class="line1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="line2">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="line1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="line2">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="line1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="line2">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <div class="line1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
