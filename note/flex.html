@@ -11,8 +11,8 @@
             display: flex;
             height: 500px;
             flex-flow: row nowrap;
-            justify-content: center;
-            align-items: stretch;
+            /*justify-content: center;*/
+            align-items: center;
             align-content: center;
         }
        
@@ -21,38 +21,50 @@
             border-radius: 3px;
             margin: 10px;
             padding: 5px 10px;
-            
+
         }
         
         .cl1 {
-            background: #eee;
-            flex-grow: 3;
-            flex-shrink: 4;
+            background:#eee;
+          /*  flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 5000px;*/
+            flex: 1 2 5000px;
+            align-self: flex-start;
+            order: -10;
         }
         
         .cl2 {
             background: #ffc400;
-            flex-grow: 1;
+            /*flex-grow: 1;*/
+            align-self: flex-end;
+            order: -10;
+            margin: auto;
+            max-width: 500px;
         }
         
         .cl3 {
             background: #c4dd95;
             flex-grow: 2;
+            align-self: auto;
+            order: 3;
         }
         
         .cl4 {
             background: #9fd3ff;
             flex-grow: 1;
+            align-self: stretch;
+            order: -11;
         }
     </style>
 </head>
 
 <body>
     <div class="flex">
-        <div class="fl cl1">1 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-        <div class="fl cl2">2 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-        <div class="fl cl3">3 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-        <div class="fl cl4">4 Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        <div class="fl cl1">1 Lorem ipsum dolor sit amet.1 Lorem ipsum dolor sit amet.</div>
+        <div class="fl cl2">2 Lorem ipsum dolor sit amet.1 Lorem ipsum dolor sit amet.</div>
+        <div class="fl cl3">3 Lorem ipsum dolor sit amet.1 Lorem ipsum dolor sit amet.</div>
+        <div class="fl cl4">4 Lorem ipsum dolor sit amet.1 Lorem ipsum dolor sit amet.</div>
     </div>
     
 </body>

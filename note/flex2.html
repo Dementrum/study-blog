@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex3</title>
+	<style>
+		.main {
+			display: flex;
+			justify-content: center;
+			margin: auto;
+			flex-wrap: wrap;
+			max-width: 72%
+
+		}
+		.flex {
+      margin: 10px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      display: flex;
+      height: 300px;
+      width: 300px;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+     }
+    
+    .flex2 {
+			margin: 10px;
+      border: 1px solid #bbb;
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      align-items: stretch;
+      justify-content: space-between;
+      height: 300px;
+      width: 300px;
+    }  
+    .flex3 {
+			margin: 10px;
+     	display: flex;
+      flex-flow: row wrap;
+    	width: 100%
+    }  
+    
+    .fl {
+      border: 1px solid #999;
+      border-radius: 3px;
+      margin: 2px;
+      padding: 5px 10px;
+		}
+		
+		.cl1 {
+			background-color: #ccc;
+		}
+		.ccl1 {
+			background-color: #ccc;
+			flex-grow: 4;
+		}
+		.fcl1 {
+			background-color: #ccc;
+			order: 2;
+		}
+
+		.cl2 {
+			background-color: yellow;
+			align-self: flex-end;
+		}
+		.ccl2 {
+			background-color: yellow;
+			flex-grow: 2;
+			align-self: flex-end;
+		}
+		.fcl2 {
+			background-color: yellow;
+			
+		}
+		
+		.cl3 {
+			background-color: #72c072;
+			order: -4;
+			align-self: flex-start;
+		}
+		.ccl3 {
+			background-color: #72c072;
+			flex-grow: 3;
+		}
+		.fcl3 {
+			background-color: #72c072;
+			max-width: 50%;
+			order: 1;
+		}
+		
+		.cl4 {
+			background-color: #b6b6e3;
+			order: -3;
+			align-self: stretch;
+		}
+		.ccl4 {
+			background-color: #b6b6e3;
+			align-self: flex-end;
+			flex-grow: 1;
+		}
+		.fcl4 {
+			background-color: #b6b6e3;
+			max-width: 20%;
+			order: 1;
+		}
+		.fcl5 {
+			background-color: magenta;
+			max-width: 20%
+		}
+		
+		h4, p {
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	  <div class="flex">
+      <div class="fl cl1">1</div>
+      <div class="fl cl2">2</div>
+      <div class="fl cl3">3</div>
+      <div class="fl cl4">4</div>
+    </div>
+	  <div class="flex2">
+      <div class="fl ccl1">1</div>
+      <div class="fl ccl2">2</div>
+      <div class="fl ccl3">3</div>
+      <div class="fl ccl4">4</div>
+    </div>
+	  <div class="flex3">
+      <div class="fl fcl1">
+      	<h4>1 Подвал</h4>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque aliquid nulla esse veniam odit iusto illum numquam, nam vel!</p>
+      </div>
+      <div class="fl fcl2">
+      	<h4>2 Шапка</h4>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque aliquid nulla esse veniam odit iusto illum numquam, nam vel!</p>
+      </div>
+      <div class="fl fcl3">
+      	<h4>3 Контент</h4>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque aliquid nulla esse veniam odit iusto illum numquam, nam vel!</p>
+      </div>
+      <div class="fl fcl4">
+      	<h4>4 Сайдбар право</h4>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque aliquid nulla esse veniam odit iusto illum numquam, nam vel!</p>
+      </div>
+      <div class="fl fcl5">
+      	<h4>5 Сайдбар лево</h4>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque aliquid nulla esse veniam odit iusto illum numquam, nam vel!</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
