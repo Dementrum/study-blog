@@ -1,35 +1,69 @@
-
 body {
-	background:
-	linear-gradient(#404040 1px, transparent 1px),
+	background: -webkit-linear-gradient(#404040 1px, transparent 1px),
+	-webkit-linear-gradient(#373737 1px, transparent 1px),
+	-webkit-linear-gradient(left, #404040 1px, transparent 1px),
+	-webkit-linear-gradient(left, #373737 1px, transparent 1px);
+	background: -moz-linear-gradient(#404040 1px, transparent 1px),
+	-moz-linear-gradient(#373737 1px, transparent 1px),
+	-moz-linear-gradient(left, #404040 1px, transparent 1px),
+	-moz-linear-gradient(left, #373737 1px, transparent 1px);
+	background: -o-linear-gradient(#404040 1px, transparent 1px),
+	-o-linear-gradient(#373737 1px, transparent 1px),
+	-o-linear-gradient(left, #404040 1px, transparent 1px),
+	-o-linear-gradient(left, #373737 1px, transparent 1px);
+	background: linear-gradient(#404040 1px, transparent 1px),
 	linear-gradient(#373737 1px, transparent 1px),
 	linear-gradient(90deg, #404040 1px, transparent 1px),
 	linear-gradient(90deg, #373737 1px, transparent 1px);
 	background-color: #333;
+	-webkit-background-size: 60px 60px, 20px 20px, 60px 60px, 20px 20px;
+	-moz-background-size: 60px 60px, 20px 20px, 60px 60px, 20px 20px;
 	background-size: 60px 60px, 20px 20px, 60px 60px, 20px 20px;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
 	text-align: center;
 	margin-bottom: 0;
 }
+
 h2 {
 	color: #d76767;
+	font: 36px Arial;
+	margin: 10px 0 50px;
+	padding: 0;
 }
+
 h1 {
-	color: #0093ae;
+	color: #0093ae; 
+	font: 400 48px Arial;
+	margin: 50px 0 10px;
 }
+
 h3 {
-	
+	color: #fff;
+	line-height: 40px;
+	font: 36px Arial;
+	padding: 0;
+	margin: 50px 0 0;
 }
+
 .main {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
 	border: none;
 }
+
 .head {
 	background: #272727;
+	text-align: center;
+	padding: 50px;
 }
+
 .content {
 	background: #fff;
+	padding: 50px;
+	margin-bottom: 50px;
 }
