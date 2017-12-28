@@ -41,7 +41,7 @@ h1 {
 	margin: 50px 0 10px;
 }
 
-h3 {
+.head.h3 {
 	color: #fff;
 	line-height: 40px;
 	font: 36px Arial;
@@ -65,5 +65,17 @@ h3 {
 .content {
 	background: #fff;
 	padding: 50px;
-	margin-bottom: 50px;
+}
+.anonse {
+	max-width: 525px;
+	background-color: #f9f9f9;
+	border: 1px solid #bbb;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.logo {
+	text-align: center;
+	padding: 50px 0 50px 0;
 }
