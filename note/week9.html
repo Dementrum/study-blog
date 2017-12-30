@@ -2,261 +2,264 @@
 <html lang="ru-RU">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
-    <title>Девятая неделя тренинга</title>
-    <!--[if lt IE 9]>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+	<title>Девятая неделя тренинга</title>
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="les.css">
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="les.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="mid">
-                <img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
-                <div class="icons">
-                    <a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt="skype" title="skype"></a>
-                    <a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt="письмо" title="написать мне"></a>
-                    <a href="form.html"><img src="images/igplus.png" alt="письмо" title="написать мне"></a>
-                </div>
-                <div class="name">Онлайн-дневник Дмитрия Колесникова.</div>
-                <div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </header>
+	<header>
+		<div class="header">
+			<div class="mid">
+				<img src="images/logo.jpg" class="logo" alt="логотип Master-CSS">
+				<div class="icons">
+					<a href="skype:dementrkolesnikov"><img src="images/iscype.png" alt="skype" title="skype"></a>
+					<a href="mailto:dmi56756877@yandex.ru" target="_blank"><img src="images/imail.png" alt="письмо" title="написать мне"></a>
+					<a href="form.html"><img src="images/igplus.png" alt="письмо" title="написать мне"></a>
+				</div>
+				<div class="name">Онлайн-дневник Дмитрия Колесникова.</div>
+				<div class="desc">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
 
-    <nav>
-        <div class="main_menu">
-            <div class="mid">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="about.html">Об авторе</a></li>
-                    <li><a href="">Отзыв о тренинге</a></li>
-                    <li><a href="form.html">Связаться со мной</a></li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="main">
-        <div class="sidebar week">
-            <div class="widget everyday">
-                <ul>
-                    <li><a href="week1.html">Неделя 1 - Ясли</a></li>
-                    <li><a href="week2.html">Неделя 2 - Детский сад</a></li>
-                    <li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
-                    <li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
-                    <li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
-                    <li><a href="week6.html">Неделя 6 - Выпускники</a></li>
-                    <li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
-                    <li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
-                    <li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
-                </ul>
-            </div>
-            <div class="widget everyday1">
-                <ul>
-                    <li><a href="#d1">День 1. Введение во Flex.</a></li>
-                    <li><a href="#d2">День 2. Задолбали эти оси.</a></li>
-                    <li><a href="#d3">День 3. Тонкое управление.</a></li>
-                    <li><a href="#d4">День 4. </a></li>
-                    <li><a href="#d5">День 5. </a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <article>
-                <header>
-                    <h1>Неделя 9 - Упаковщики</h1>
-                </header>
-                <section>
-                    <div class="day">
-                        <h2 id="d1">День 1. Введение во Flex.</h2>
-                        <p><b>Flexible Box</b> - переводится, как "гибкий блок".</p>
-                        <p><b>Flex-контейнер</b> - родительский блок, в котором и будет происходить весь спектакль</p>
-                        <p><b>Flex-элемент</b> - это дочерние блоки родителя, которые участвуют в нашем спектакле.</p>
-                        <div class="block_important">
-                            <p>Css столбцы columns, float, clear и vertical-align - эти свойства НЕ РАБОТАЮТ, когда мы применяет Flexbox</p>
-                        </div>
-                        <p>Flex можно включить, если мы пропишем flex-контейнеру свойство<br> <span class="ss">display: flex;</span></p>
-                        <p>Не забываем добавлять префиксы:</p>
-                        <div class="code">
-                            <img class="star" src="images/process.png" alt=""> .flex {<br> display: -webkit-box;<br> display: -webkit-flex;<br> display: -moz-box;<br> display: -ms-flexbox;<br> display: flex;<br> }
-                        </div>
-                        <div class="block_important">
-                            <p>Во FlexBox внешние поля (margin) складываются!.</p>
-                        </div>
-                        <div class="close">
-                            <p><b>Заключение:</b>
-                                <p>Наконец то, теперь изучу Flexbox, а то я их методом тыка использовал. Ссылка здесь: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
-                        </div>
-                    </div>
-                </section>
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
+					<li><a href="">Отзыв о тренинге</a></li>
+					<li><a href="form.html">Связаться со мной</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="sidebar week">
+			<div class="widget everyday">
+				<ul>
+					<li><a href="week1.html">Неделя 1 - Ясли</a></li>
+					<li><a href="week2.html">Неделя 2 - Детский сад</a></li>
+					<li><a href="week3.html">Неделя 3 - Начальная школа</a></li>
+					<li><a href="week4.html">Неделя 4 - Средняя школа</a></li>
+					<li><a href="week5.html">Неделя 5 - Старшая школа</a></li>
+					<li><a href="week6.html">Неделя 6 - Выпускники</a></li>
+					<li><a href="week7.html">Неделя 7 - Реформаторы</a></li>
+					<li><a href="week8.html">Неделя 8 - Прогрессоры</a></li>
+					<li><a href="week9.html">Неделя 9 - Упаковщики</a></li>
+					<li><a href="week10.html">Неделя 10 - Практика и анимация</a></li>
+				</ul>
+			</div>
+			<div class="widget everyday1">
+				<ul>
+					<li><a href="#d1">День 1. Введение во Flex.</a></li>
+					<li><a href="#d2">День 2. Задолбали эти оси.</a></li>
+					<li><a href="#d3">День 3. Тонкое управление.</a></li>
+					<li><a href="#d4">День 4. Жадина-говядина.</a></li>
+					<li><a href="#d5">День 5. Стройбат-батя!</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<article>
+				<header>
+					<h1>Неделя 9 - Упаковщики</h1>
+				</header>
+				<section>
+					<div class="day">
+						<h2 id="d1">День 1. Введение во Flex.</h2>
+						<p><b>Flexible Box</b> - переводится, как "гибкий блок".</p>
+						<p><b>Flex-контейнер</b> - родительский блок, в котором и будет происходить весь спектакль</p>
+						<p><b>Flex-элемент</b> - это дочерние блоки родителя, которые участвуют в нашем спектакле.</p>
+						<div class="block_important">
+							<p>Css столбцы columns, float, clear и vertical-align - эти свойства НЕ РАБОТАЮТ, когда мы применяет Flexbox</p>
+						</div>
+						<p>Flex можно включить, если мы пропишем flex-контейнеру свойство<br> <span class="ss">display: flex;</span></p>
+						<p>Не забываем добавлять префиксы:</p>
+						<div class="code">
+							<img class="star" src="images/process.png" alt=""> .flex {<br> display: -webkit-box;<br> display: -webkit-flex;<br> display: -moz-box;<br> display: -ms-flexbox;<br> display: flex;<br> }
+						</div>
+						<div class="block_important">
+							<p>Во FlexBox внешние поля (margin) складываются!.</p>
+						</div>
+						<div class="close">
+							<p><b>Заключение:</b>
+								<p>Наконец то, теперь изучу Flexbox, а то я их методом тыка использовал. Ссылка здесь: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
+						</div>
+					</div>
+				</section>
 
-                <section>
-                    <div class="day">
-                        <h2 id="d2">День 2. Задолбали эти оси.</h2>
-                        <p>Во Flex-контейнере есть две оси, по которым мы можем управлять положением наших блоков</p>
-                        <p><b>Главная ось</b> - эта ось, по которой направляются наши блоки.</p>
-                        <p><b>Поперечная ось</b> - она всегда перпендикулярна главной.</p>
-                        <p>Мы можем поменять направление главной оси при помощи свойства<br> <span class="ss">flex-direction</span></p>
-                        <p><b>Значения свойства flex-direction</b></p>
-                        <ul>
-                            <li><i>row</i> - наши блоки будут располагаться слева направо-строкой (значение по умолчанию).</li>
-                            <li><i>row-reverse</i> - блоки идут справа налево</li>
-                            <li><i>column</i> - располагает наши блоки столбцом (сверху вниз)</li>
-                            <li><i>column-reverse</i> - располагает блоки наоборот</li>
-                        </ul>
-                        <h3>Выравнивание по осям</h3>
-                        <p><span class="ss">justify-content</span> - оно выравнивает блоки по главной оси.</p>
-                        <ul>
-                            <li><i>flex-start</i> - блоки выравниваются от начала главной оси</li>
-                            <li><i>flex-end</i> - блоки выравниваются с конца главной оси </li>
-                            <li><i>space-between</i> - блоки прижимаются к краям главной оси, а остальные блоки равномерно распределяются.</li>
-                            <li><i>space-around </i> - блоки равномерно распределяются по главной оси </li>
-                            <li><i>center</i> - размещает блоки по центу</li>
-                         </ul>
-                         
-                          <p><span class="ss">align-items</span> - оно выравнивает блоки по поперечной оси.</p>
-                          <ul>
-                            <li><i>flex-start</i> - прижимает блоки к началу оси</li>
-                            <li><i>flex-end</i> - блоки выравниваются с конца главной оси </li>
-                            <li><i>stretch</i> - оно растягивает блоки по всей поперечной оси.</li>
-                            <li><i>center</i> - размещает блоки по центру.</li>
-                            <li><i>baseline</i> - выставляет блоки по их базовой линии.</li>
-                         </ul>
-                         <div class="block_important">
-                             <p>Поперечная ось всегда имеет одно направление - сверху вниз, или слева направо.</p>
-                         </div> <div class="block_important">
-                             <p>Если блокам указана ширина и высота, то значение strech игнорируется.</p>
-                         </div>
-                         <h3>Домашняя работа</h3>
-                          <p> Ссылка на подопытного: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
-                          <p> Ссылка на домашнюю работу: <a href="flex-home.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Задолбали эти оси.</h2>
+						<p>Во Flex-контейнере есть две оси, по которым мы можем управлять положением наших блоков</p>
+						<p><b>Главная ось</b> - эта ось, по которой направляются наши блоки.</p>
+						<p><b>Поперечная ось</b> - она всегда перпендикулярна главной.</p>
+						<p>Мы можем поменять направление главной оси при помощи свойства<br> <span class="ss">flex-direction</span></p>
+						<p><b>Значения свойства flex-direction</b></p>
+						<ul>
+							<li><i>row</i> - наши блоки будут располагаться слева направо-строкой (значение по умолчанию).</li>
+							<li><i>row-reverse</i> - блоки идут справа налево</li>
+							<li><i>column</i> - располагает наши блоки столбцом (сверху вниз)</li>
+							<li><i>column-reverse</i> - располагает блоки наоборот</li>
+						</ul>
+						<h3>Выравнивание по осям</h3>
+						<p><span class="ss">justify-content</span> - оно выравнивает блоки по главной оси.</p>
+						<ul>
+							<li><i>flex-start</i> - блоки выравниваются от начала главной оси</li>
+							<li><i>flex-end</i> - блоки выравниваются с конца главной оси </li>
+							<li><i>space-between</i> - блоки прижимаются к краям главной оси, а остальные блоки равномерно распределяются.</li>
+							<li><i>space-around </i> - блоки равномерно распределяются по главной оси </li>
+							<li><i>center</i> - размещает блоки по центу</li>
+						</ul>
 
-                        <div class="close">
-                            <p><b>Заключение:</b>
-                                <p>Flex-ы невероятно удобная штука для верстки сайтов, что тут ещё сказать.</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="day">
-                        <h2 id="d3">День 3. Тонкое управление.</h2>
-                        <p>Мы можем указать flex- контейнеру, чтобы его блоки переносились на новый ряд.</p>
-                        <p><span class="ss">flex-wrap</span> - управляет переносом блоков на новый ряд.</p>
-                        <ul>
-                            <li><i>nowrap</i> - блоки расположены в одну линию.</li>
-                            <li><i>wrap</i> - переносит блоки на новую строку или ряд.</li>
-                            <li><i>wrap-reverse</i> - тоже переносит блоки, только в обратном порядке.</li>
-                        </ul>
-                        <div class="block_important">
-                            <p>Переносы работают только в том случае, если наши блоки не влазят по размерам в один ряд.</p>
-                        </div>
-                        <p><span class="ss">align-content</span> - выравнивает ряды блоков по поперечной оси.</p>
-                        <ul>
-                            <li><i>flex-start</i> - прижимает ряды блоков к началу оси.</li>
-                            <li><i>flex-end</i> -ряды блоков выравниваются с конца главной оси. </li>
-                            <li><i>stretch</i> - оно растягивает ряды блоков по всей поперечной оси.( по умолчанию )</li>
-                            <li><i>center</i> - размещает ряды блоков по центру.</li>
-                             <li><i>space-between</i> -ряды блоков прижимаются к краям главной оси, а остальные блоки равномерно распределяются.</li>
-                            <li><i>space-around </i> - ряды блоков равномерно распределяются по главной оси. </li>
-                         </ul>
-                         <p><span class="ss">flex-flow</span> - обьединение свойств <span class="ss">flex-direction</span> и <span class="ss">flex-wrap</span></p>
-                        <p>То есть вместо двух свойств, мы можем прописать одно с двумя значениями.</p>
-                        <h3>Домашка</h3>
-                        <p> Ссылка на подопытного: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
-                          <p> Ссылка на домашнюю работу: <a href="flex3.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
-                        <div class="close">
-                            <p><b>Заключение:</b></p>
-                            <p>Вроде несложно Flex-ы, но пока не привыкнешь, путаница происходит</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="day">
-                        <h2 id="d4">День 4. Жадина-говядина.</h2>
-                        <p><span class="ss">flex-grow: 0;</span> - указывает, как блок будет занимать свободное пространство внутри контейнера, относительно других блоков.</p>
-                        <p>Иначе, в народе, это свойство называют "жадность" блока</p>
-                        <div class="block_important">
-                            <p>Значение этого свойства, не абсолютное, а относительное. Оно указывает, как блок будет забирать свободное пространство внутри контейнера, относительно других блоков.</p>
-                        </div>
-                        <p><span class="ss">flex-shrink:1;</span> - указывает степень сжимаемости блока, если нет свободного пространства.</p>
-                         <div class="block_important">
-                            <p>Жадность работает только со свободным пространством, у сжимаемости -только тогда, когда его не хватает</p>
-                        </div>
-                        <p>Помните, что степень сжатия зависит от переизбытка занимаемого пространства, чем оно больше, тем сжатие больше</p>
-                        <p><span class="ss">flex-basis</span> - указывает базовую ширину блока, от которой надо отталкиваться при подсчете жадности и сжимаемости</p>
-                        <p>Значения свойства могут выражаться в пикселях, процентах, em, rem и других величинах</p>
-                        <p><span class="ss">flex: flex-grow flex-shrink flex-basis;</span> - обьединяет вместе все верхние 3 свойства. Идут они в таком же порядке, как мы и разбирали.</p>
-                        <div class="close">
-                            <p><b>Заключение:</b>
-                                <p>Сегодня познакомились с первыми свойствами для flex-элементов.</p>
-                                <p>Дурдом!!! Б-р-р-р...</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="day">
-                        <h2 id="d5">День 5. Стройбат батя!.</h2>
-                        <p><span class="ss">align-self</span> - позволяет выровнять наши блоки по поперечной оси.</p> 
-                         <div class="block_important">
-                            <p>Это свойство, можно назначить каждому отдельному блоку. Оно важнее, чем align-items.</p>
-                          </div>
-                            <ul>
-                              <li><i>flex-start</i> - прижимает блок к началу оси</li>
-                              <li><i>flex-end</i> - блок выравниваются с конца главной оси </li>
-                              <li><i>stretch</i> - оно растягивает блок по всей поперечной оси.</li>
-                              <li><i>center</i> - размещает блок по центру.</li>
-                              <li><i>baseline</i> - выставляет блок по их базовой линии.</li>
-                              <li><i>auto</i> - это значение по-умолчанию означает, что наш блок будет использовать align-items.</li>
-                            </ul>
-                            <p><span class="ss">order</span> - указывает распорядок блоков.</p>
-                            <p>Использует обычные числа. Могут быть как положительные, так и отрицательные значения.</p>
-                            <div class="block_important">
-                              <p>Значение, по умолчанию у всех блоков 1. То есть, они выводятся как есть в HTML-документе.</p>
-                            </div>
-                            <p>Чем меньше значение блока, тем первее он будет выводиться во flex-контейнере(что-то вроде z-index)</p>
-                            <p>Если значения у блоков одинаковые, тогда они выводятся в порядке, в котором прописаны в HTML</p>
-                            <h3>Маленькие фишки</h3>
-                            <div class="block_chip">
-                              <p>Во flex-контейнере свойство margin:auto выравнивает блоки, не только по горизонтали, но и по вертикали.</p>
-                            </div>
-                            <div class="block_chip">
-                              <p>Чтобы ограничить наши блоки по определенному размеру при свойстве flex-grow, указывайте максимальную высоту и ширину.</p>
-                            </div>
-                            <div class="block_important">
-                              <p>Свойство margin: auto криво работает в IE, если дополнительно используется свойства flex-grow и jusity-content.</p>                            
-                            </div>
-                            <h3>Домашняя работа</h3>
-                             <p> Ссылка на домашу: <a href="flex2.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
-                        <div class="close">
-                            <p><b>Заключение:</b>
-                                <p></p>
-                        </div>
-                    </div>
-                </section>
-            </article>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="mid">
-                <div class="mid">
-                    <img src="images/logo-foot.png" height="50" width="320" alt=""> 2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script>
-        window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');
-    </script>
-    <script src="js/progressbaranimate.js"></script>
+						<p><span class="ss">align-items</span> - оно выравнивает блоки по поперечной оси.</p>
+						<ul>
+							<li><i>flex-start</i> - прижимает блоки к началу оси</li>
+							<li><i>flex-end</i> - блоки выравниваются с конца главной оси </li>
+							<li><i>stretch</i> - оно растягивает блоки по всей поперечной оси.</li>
+							<li><i>center</i> - размещает блоки по центру.</li>
+							<li><i>baseline</i> - выставляет блоки по их базовой линии.</li>
+						</ul>
+						<div class="block_important">
+							<p>Поперечная ось всегда имеет одно направление - сверху вниз, или слева направо.</p>
+						</div>
+						<div class="block_important">
+							<p>Если блокам указана ширина и высота, то значение strech игнорируется.</p>
+						</div>
+						<h3>Домашняя работа</h3>
+						<p> Ссылка на подопытного: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
+						<p> Ссылка на домашнюю работу: <a href="flex-home.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
+
+						<div class="close">
+							<p><b>Заключение:</b>
+								<p>Flex-ы невероятно удобная штука для верстки сайтов, что тут ещё сказать.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Тонкое управление.</h2>
+						<p>Мы можем указать flex- контейнеру, чтобы его блоки переносились на новый ряд.</p>
+						<p><span class="ss">flex-wrap</span> - управляет переносом блоков на новый ряд.</p>
+						<ul>
+							<li><i>nowrap</i> - блоки расположены в одну линию.</li>
+							<li><i>wrap</i> - переносит блоки на новую строку или ряд.</li>
+							<li><i>wrap-reverse</i> - тоже переносит блоки, только в обратном порядке.</li>
+						</ul>
+						<div class="block_important">
+							<p>Переносы работают только в том случае, если наши блоки не влазят по размерам в один ряд.</p>
+						</div>
+						<p><span class="ss">align-content</span> - выравнивает ряды блоков по поперечной оси.</p>
+						<ul>
+							<li><i>flex-start</i> - прижимает ряды блоков к началу оси.</li>
+							<li><i>flex-end</i> -ряды блоков выравниваются с конца главной оси. </li>
+							<li><i>stretch</i> - оно растягивает ряды блоков по всей поперечной оси.( по умолчанию )</li>
+							<li><i>center</i> - размещает ряды блоков по центру.</li>
+							<li><i>space-between</i> -ряды блоков прижимаются к краям главной оси, а остальные блоки равномерно распределяются.</li>
+							<li><i>space-around </i> - ряды блоков равномерно распределяются по главной оси. </li>
+						</ul>
+						<p><span class="ss">flex-flow</span> - обьединение свойств <span class="ss">flex-direction</span> и <span class="ss">flex-wrap</span></p>
+						<p>То есть вместо двух свойств, мы можем прописать одно с двумя значениями.</p>
+						<h3>Домашка</h3>
+						<p> Ссылка на подопытного: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
+						<p> Ссылка на домашнюю работу: <a href="flex3.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
+						<div class="close">
+							<p><b>Заключение:</b></p>
+							<p>Вроде несложно Flex-ы, но пока не привыкнешь, путаница происходит</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d4">День 4. Жадина-говядина.</h2>
+						<p><span class="ss">flex-grow: 0;</span> - указывает, как блок будет занимать свободное пространство внутри контейнера, относительно других блоков.</p>
+						<p>Иначе, в народе, это свойство называют "жадность" блока</p>
+						<div class="block_important">
+							<p>Значение этого свойства, не абсолютное, а относительное. Оно указывает, как блок будет забирать свободное пространство внутри контейнера, относительно других блоков.</p>
+						</div>
+						<p><span class="ss">flex-shrink:1;</span> - указывает степень сжимаемости блока, если нет свободного пространства.</p>
+						<div class="block_important">
+							<p>Жадность работает только со свободным пространством, у сжимаемости -только тогда, когда его не хватает</p>
+						</div>
+						<p>Помните, что степень сжатия зависит от переизбытка занимаемого пространства, чем оно больше, тем сжатие больше</p>
+						<p><span class="ss">flex-basis</span> - указывает базовую ширину блока, от которой надо отталкиваться при подсчете жадности и сжимаемости</p>
+						<p>Значения свойства могут выражаться в пикселях, процентах, em, rem и других величинах</p>
+						<p><span class="ss">flex: flex-grow flex-shrink flex-basis;</span> - обьединяет вместе все верхние 3 свойства. Идут они в таком же порядке, как мы и разбирали.</p>
+						<div class="close">
+							<p><b>Заключение:</b>
+								<p>Сегодня познакомились с первыми свойствами для flex-элементов.</p>
+								<p>Дурдом!!! Б-р-р-р...</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d5">День 5. Стройбат батя!.</h2>
+						<p><span class="ss">align-self</span> - позволяет выровнять наши блоки по поперечной оси.</p>
+						<div class="block_important">
+							<p>Это свойство, можно назначить каждому отдельному блоку. Оно важнее, чем align-items.</p>
+						</div>
+						<ul>
+							<li><i>flex-start</i> - прижимает блок к началу оси</li>
+							<li><i>flex-end</i> - блок выравниваются с конца главной оси </li>
+							<li><i>stretch</i> - оно растягивает блок по всей поперечной оси.</li>
+							<li><i>center</i> - размещает блок по центру.</li>
+							<li><i>baseline</i> - выставляет блок по их базовой линии.</li>
+							<li><i>auto</i> - это значение по-умолчанию означает, что наш блок будет использовать align-items.</li>
+						</ul>
+						<p><span class="ss">order</span> - указывает распорядок блоков.</p>
+						<p>Использует обычные числа. Могут быть как положительные, так и отрицательные значения.</p>
+						<div class="block_important">
+							<p>Значение, по умолчанию у всех блоков 1. То есть, они выводятся как есть в HTML-документе.</p>
+						</div>
+						<p>Чем меньше значение блока, тем первее он будет выводиться во flex-контейнере(что-то вроде z-index)</p>
+						<p>Если значения у блоков одинаковые, тогда они выводятся в порядке, в котором прописаны в HTML</p>
+						<h3>Маленькие фишки</h3>
+						<div class="block_chip">
+							<p>Во flex-контейнере свойство margin:auto выравнивает блоки, не только по горизонтали, но и по вертикали.</p>
+						</div>
+						<div class="block_chip">
+							<p>Чтобы ограничить наши блоки по определенному размеру при свойстве flex-grow, указывайте максимальную высоту и ширину.</p>
+						</div>
+						<div class="block_important">
+							<p>Свойство margin: auto криво работает в IE, если дополнительно используется свойства flex-grow и jusity-content.</p>
+						</div>
+						<h3>Домашняя работа</h3>
+						<p> Ссылка на домашу: <a href="flex2.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
+						<div class="close">
+							<p><b>Заключение:</b>
+								<p></p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="mid">
+				<div class="mid">
+					<img src="images/logo-foot.png" height="50" width="320" alt=""> 2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script>
+		window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');
+
+	</script>
+	<script src="js/progressbaranimate.js"></script>
 </body>
 
 </html>
