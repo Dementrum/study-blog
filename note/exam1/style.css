@@ -75,56 +75,33 @@ h1 {
 	        flex-wrap: wrap;
 }
 .anonse {
-	background-color: #f9f9f9;
-	border: 1px solid #bbb;
-	padding: 20px;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-		-webkit-box-flex: 1;
-		-webkit-flex: 1 0;
-		   -moz-box-flex: 1;
-		    -ms-flex: 1 0;
-		        flex: 1 0;
-	    -ms-flex-preferred-size: 300px;
-	        -webkit-flex-basis: 350px;
-	            flex-basis: 350px;
-	margin: 25px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	   -moz-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-z-index: 1;
+ background-color: #f9f9f9;
+  border: 1px solid #bbb;
+  padding: 20px;
+  margin: 25px;
+  box-sizing: border-box;
+  flex: 1 0 340px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .pic {
 	margin-right: 20px;
-	height: 100%;
-		-webkit-flex-shrink: 3;
-	    -ms-flex-negative: 3;
-	        flex-shrink: 3;
+	flex: 0 3 260px;
 	-webkit-box-shadow: 0 0 7px #222 inset;
 	   -moz-box-shadow: 0 0 7px #222 inset;
 	        box-shadow: 0 0 7px #222 inset;
 }
 .pic img {
 	width: 100%;
-	height: 100%;
-	-webkit-flex-basis: 260px;
-	    -ms-flex-preferred-size: 260px;
-	        flex-basis: 260px;
+	height: auto;
 	position: relative;
+	vertical-align: middle;
 	z-index: -1
 }
 .text {
-	-webkit-flex-basis: 200px;
-	    -ms-flex-preferred-size: 200px;
-	        flex-basis: 200px;
+	flex: 1 1 200px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -150,8 +127,9 @@ z-index: 1;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-p a {
-	margin-left: 50px;
+.text p:last-child {
+	margin-top: 20px;
+	text-align: right;
 }
 .text p a:hover {
 	background-color: #e44d26;
@@ -185,4 +163,7 @@ a {
 	.main {
 		margin: 0 20px;
 	}
+}
+@media screen and (max-width:значение1) and  (max-width:значение2) {
+
 }
