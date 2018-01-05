@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="images/slash-dot.png" type="image/png">
+	<link rel="shortcut icon" href="images/slash-dot1.png" type="image/png">
 	<title>Десятая неделя тренинга</title>
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -61,9 +61,9 @@
 			</div>
 			<div class="widget everyday1">
 				<ul>
-					<li><a href="#d1">День 1.</a></li>
-					<li><a href="#d2">День 2.</a></li>
-					<li><a href="#d3">День 3.</a></li>
+					<li><a href="#d1">День 1. Допилка сайта</a></li>
+					<li><a href="#d2">День 2. Flex на практике.</a></li>
+					<li><a href="#d3">День 3. Адаптация</a></li>
 					<li><a href="#d4">День 4.</a></li>
 					<li><a href="#d5">День 5.</a></li>
 				</ul>
@@ -114,8 +114,9 @@
 						<pre>
 							<span class="faq">//Если ширина окна браузера меньше, чем 1224 пикселя, то к блоку main добавляются отступы по бокам в 20 пикселей</span>
 	          @media screen and (max-width:1224px){
-	          &nbsp;&nbsp;&nbsp;div.main{margin: 0 20px;}
-						}
+						&nbsp;&nbsp;&nbsp;div.main{margin: 0 20px;
+							&nbsp;	}
+							}
 					</pre>
 						<h3>Если ширина экрана больше чем значение</h3>
 						<p><span class="style">@media screen and (min-width: значение)</span></p>	
@@ -124,10 +125,19 @@
 							@media screen and (min-width:800px) {
 							&nbsp;&nbsp;.head h3 {
 							&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;
-								}
+							&nbsp;	}
+							}
 						</pre>
 						<h3>Ширина находится в определенном диапазоне</h3>
 						<p><span class="style">@media screen and (max-width:значение1) and  (max-width:значение2)</span> - стили применяются, если ширина окна браузера находится в пределах значения1 и значения2.</p>
+						<pre>
+							<span class="faq">//Когда ширина экрана браузера больше 879 и меньше 1051px- меняется направление главной оси в блоке anonse.</span>
+							@media screen and (min-width:880px) and  (max-width:1050px) {
+							&nbsp;.anonse {
+								&nbsp;&nbsp;&nbsp;flex-direction: column;
+								&nbsp;	}
+							}
+						</pre>
 						<div class="close">
 							<p><b>Заключение:</b></p>
 							<p>Вроде несложно Flex-ы, но пока не привыкнешь, путаница происходит</p>
