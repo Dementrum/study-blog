@@ -100,6 +100,7 @@ h1 {
 	vertical-align: middle;
 	z-index: -1
 }
+
 .text {
 	flex: 1 1 220px;
 	display: -webkit-box;
@@ -187,5 +188,51 @@ a {
 	}
 	.text h3 {
 		text-align: center;
+	}
+}
+@media screen and (min-width:400px) and  (max-width:660px) {
+	.head img{
+		width: 100%;
+		height: auto;
+	}
+	h2, .head h3 {
+		font-size: 30px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.logo img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width:500px) {
+	.anonse{
+		flex-direction: column;
+		margin: 10px auto;
+	}
+}
+@media screen and (min-width:300px) and  (max-width:500px) {
+	.anonse{
+		flex: 240px;
+	}
+	.pic {
+		flex: 150px;
+	}
+	.text h3 {
+		font-size: 25px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.head h3 {
+		font-size: 30px;
 	}
 }
