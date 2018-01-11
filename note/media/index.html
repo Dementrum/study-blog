@@ -28,9 +28,25 @@
     width: 100%;
     border: none;
   }
+  .video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  .video iframe, .video embed, .video object {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 </style>
   <div class="main">
-		<img src="poster.jpg" alt="Poster">
+    <img src="poster.jpg" alt="Poster">
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G6BJhiWAbYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
 	</div>
 	
 </body>
