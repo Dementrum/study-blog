@@ -127,7 +127,7 @@
 						<h3>Если ширина меньше чем значение</h3>
 						<p><span class="style">@media-screen and (max-width:значение)</span> - стили применяются, если ширина экрана меньше, чем указанное значение.</p>
 						<pre>
-							<span class="faq">//Если ширина окна браузера меньше, чем 1224 пикселя, то к блоку main добавляются отступы по бокам в 20 пикселей</span>
+							<span class="faq">//Стили этого запроса будут применяться только для экранных устройств с шириной области просмотра не более 1224, и к блоку main добавляются отступы по бокам в 20 пикселей</span>
 	          @media screen and (max-width:1224px){
 						&nbsp;&nbsp;&nbsp;div.main{margin: 0 20px;
 							&nbsp;	}
@@ -136,7 +136,7 @@
 						<h3>Если ширина экрана больше чем значение</h3>
 						<p><span class="style">@media screen and (min-width: значение)</span></p>	
 						<pre>
-							<span class="faq">//Если ширина экрана меньше 800px-текст заголовка перемещается влево.</span>
+							<span class="faq">//Если ширина экрана больше 800px-текст заголовка перемещается влево.</span>
 							@media screen and (min-width:800px) {
 							&nbsp;&nbsp;.head h3 {
 							&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;
