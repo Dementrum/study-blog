@@ -1,0 +1,20 @@
+body{
+  background: #3d3d3d;
+  margin: 0;
+  padding: 0;
+  font:16px/24px Arial, Tahoma, "Trebuchet MS", sans-serif; 
+  color:#ccc;
+}
+.main{
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+img{border: none; border: 10px solid #f5f5f5;}
+p{margin: 0; padding: 0;}
+
+h1, h2, h3{color: #fff; font-size: 24px; font-weight: 400;}
+h2{font-size: 22px;}
+h3{font-size: 20px; padding: 40px 0; margin: 40px 0 0; border-top: 1px dashed #777;}
+
