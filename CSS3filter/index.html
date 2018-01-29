@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf8">
-  <link rel="shortcut icon" href="http://master-css.com/application/maxsite/templates/master-css/images/favicons/logomcwl.png" type="image/x-icon">
+  <link rel="shortcut icon" href="http://master-css.com/application/maxsite/templates/master-css/images/favicons/logomcwl.png"
+    type="image/x-icon">
   <link rel="stylesheet" href="les.css">
   <link rel="stylesheet" href="./style.css">
   <title>Filter CSS3</title>
@@ -18,11 +19,48 @@
   <div class="main">
     <h1>Тестирование свойства Filters</h1>
     <h2>на изображении ниже:</h2>
-    <img src="images/test.jpg" alt="Ягуар">
-    <p><em>(оригинал)</em></p>
+    <img src="images/test.jpg" alt="Ягуар" width="480" height="270">
+    <p>
+      <em>(оригинал)</em>
+    </p>
     <h3>Значение blur</h3>
-    <img src="./images/test.jpg" alt="Ягуар" class="">
+    <img src="./images/test.jpg" alt="Ягуар" class="blur" width="480" height="270">
+    <p>
+      <em>img.blur { filter: blur(2px); }</em>
+    </p>
+    
+    <h3>Значение brightness</h3>
+    <img src="./images/test.jpg" alt="Ягуар" class="brightness" width="480" height="270">
+    <p>
+      <em>img.brightness { filter: brightness(2); }</em>
+    </p>
+    
+    <h3>Значение contrast</h3>
+    <img src="./images/test.jpg" alt="Ягуар" class="contrast" width="480" height="270">
+    <p>
+      <em>img.contrast { filter: contrast(2); }</em>
+    </p>
+     
+    <h3>Значение saturate</h3>
+    <img src="./images/test.jpg" alt="Ягуар" class="saturate" width="480" height="270">
+    <p>
+      <em>img.saturate { filter: saturate(200%); }</em>
+    </p>
+    
+    <h3>Значение opacity</h3>
+    <img src="./images/test.jpg" alt="Ягуар" class="opacity" width="480" height="270">
+    <p>
+      <em>img.opacity { filter: opacity(50%); }</em>
+    </p>
+    
+    <h3>Значение invert</h3>
+    <img src="./images/test.jpg" alt="Ягуар" class="invert" width="480" height="270">
+    <p>
+      <em>img.invert { filter: invert(50%); }</em>
+    </p>
+    
   </div>
 
 </body>
+
 </html>
