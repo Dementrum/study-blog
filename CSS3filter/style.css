@@ -14,25 +14,56 @@ body {
 img {
   border: none;
   border: 10px solid #f5f5f5;
+  transition: 0.3s all;
+  cursor: pointer;
 }
-img.blur {
+img.blur:hover {
   filter: blur(2px);
 }
 
-img.brightness {
+img.brightness:hover{
   filter: brightness(2);
 }
 
-img.contrast {
+img.contrast:hover{
   filter: contrast(1.5);
 }
 
-img.saturate {
+img.saturate:hover {
   filter: saturate(200%);
 }
 
-img.opacity{
+img.opacity:hover{
   filter: opacity(50%);
+}
+
+img.invert:hover{
+  filter: invert(100%);
+}
+
+img.sepia:hover{
+  filter: sepia(0.5);
+}
+
+img.grayscale:hover{
+  filter: grayscale(0.7);
+}
+
+img.hue-rotate:hover{
+  filter: hue-rotate(270deg);
+}
+
+img.drop-shadow{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+img.drop-shadow:hover{
+  filter: drop-shadow(5px 5px 10px #111);
+  position: relative;
+  top: -3px;
+  left: -3px;
+
 }
 p {
   margin: 0;
