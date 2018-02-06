@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./animate.css">
+  <link rel="stylesheet" href="style.css">
+  <script> src="https://yastatic.net/jquery/3.1.1/jquery.min.js"</script>
+  <title>Animate.CSS</title>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<a href="http://master-css.com">
+  <img src="images/master-css.png" class="mylogo" alt="Master-CSS" title="Master-CSS">
+</a>
+
+  <div class="main">
+    <h1 class="animated mov">Animate.CSS</h1>
+    <h2>примеры и практика:</h2>
+    
+    <h3 class="animated mov">wobble</h3>
+    <img class="animated mov" src="images/dog1.jpg" alt="Собака - лучший друг человека">
+    <p><em>class="animated wobble"</em></p>
+    
+    <h3>zoomIn</h3>
+    <img class="animated mov" src="images/dog2.jpg" alt="Собака - лучший друг человека">
+    <p><em>class="animated zoomIn"</em></p>
+    
+    <h3>flip</h3>
+    <img  class="animated mov" src="images/dog3.jpg" alt="Собака - лучший друг человека">
+    <p><em>class="animated flip"</em></p>
+    
+    <h3>Простая картинка</h3>
+    <img src="images/dog4.jpg" alt="Собака - лучший друг человека">
+    <p><em>(без анимации)</em></p>
+    
+  </div>
+  <script>
+    $(window).scroll(function() {
+      $('.mov').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+200) {
+          $(this).addClass('wobble');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
