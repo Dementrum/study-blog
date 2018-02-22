@@ -388,9 +388,12 @@ summary {
 	text-shadow: 1px 1px 0 #F7F7F7;
 	background: #eae8e8;
 }
+.check {
+  margin-left: 5px;
+}
 .check-pos {
 	position: relative;
-	text-indent: 17px;
+	text-indent: 20px;
 }
 .check:before {
 	content: "\2714";

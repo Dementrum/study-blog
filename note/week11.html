@@ -129,7 +129,8 @@
 							прозрачности, добавление тени, трансформация и др.</p>
 						<p class="check-pos">
 							<i class="check">blur</i> - показывает размытость картинки, значение обозначается в пикселях, причем, чем больше пикселей, тем больше
-							размытие.</p>
+							размытие.
+						</p>
 						<div class="code">
 							<p>img.blur {filter: blur(2px);}</p>
 						</div>
@@ -141,67 +142,68 @@
 						</div>
 
 						<p class="check-pos">
-								<i class="check">contrast</i>
+							<i class="check">contrast</i> - показывает контраст, значения задаются либо в целых или дробных числах, либо в процентах.
 						</p>
 						<div class="code">
-							<p>img.contrast {filter: contrast(3);}</p>
+							<p>img.contrast {filter: contrast(1.5);}</p>
 						</div>
 
 						<p class="check-pos">
-								<i class="check"></i>
+							<i class="check">saturate</i> - показывает насыщенную теплоту картинки, значения задаются либо в целых или дробных числах,лбо в процентах.
 						</p>
 						<div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
-						</div>
-
-              <p class="check-pos">
-								<i class="check"></i>
-						</p>
-              <div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
-						</div>
-
-              <p class="check-pos">
-								<i class="check"></i>
-						</p>
-						<div class="code">
-              <p>img.brightness {filter: brightness(3);}</p>
-            </div>
-
-						<p class="check-pos">
-								<i class="check"></i>
-						</p>
-						<div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
+							<p>img.saturate {filter: saturate(200%);}</p>
 						</div>
 
 						<p class="check-pos">
-              <i class="check"></i>
-            </p>
+							<i class="check">opacity</i> - устанавливат прозрачность картинки, значения также задаются в процентах или в дробных числах, но есть ограничения: дробные числа - от 0 до 1, в процентах - от 1 до 100. 
+						</p>
 						<div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
+							<p>img.opacity {filter: opacity(50%);}</p>
 						</div>
 
 						<p class="check-pos">
-								<i class="check"></i>
+							<i class="check">invert</i> - инверсия цвета, означает противоположный - любой цвет станет противоположным по спектру, значения задаются в процентах.
 						</p>
 						<div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
+							<p>img.invert {filter: invert(100%);}</p>
 						</div>
 
 						<p class="check-pos">
-								<i class="check"></i>
+							<i class="check">sepia</i> - сепия дает набор оттенков от темно-коричневого до светло-золотистого тона, цвета сепии ассоциируются со стариной, значения задаются либо в целых или дробных числах, либо в процентах.
 						</p>
 						<div class="code">
-							<p>img.brightness {filter: brightness(3);}</p>
-            </div>
+							<p>img.sepia {filter: sepia(0,5);}</p>
+						</div>
+
+						<p class="check-pos">
+							<i class="check">grayscale</i> - градация серых тонов, полутонов, отличительной особенностью которой является отсутствие контраста по цвету. Цветовой режим изображений, которые отображаются в оттенках серого цвета. Значения также задаются в процентах или в дробных, либо в целых числах, но есть ограничения: дробные числа -от 0 до 1, в процентах -от 1 до 100.
+						</p>
+						<div class="code">
+                <p>img.grayscale {filter: grayscale(0,7);}</p>
+						</div>
+
+						<p class="check-pos">
+							<i class="check">hue -rotate</i> - меняет цвета изображения в зависимости от заданного угла. Угол поворота определякт на сколько изменится данный цвет в цветовом круге от красного до фиолетового. Значение задается в градусах(0deg -360 deg)
+						</p>
+						<div class="code">
+							<p>img.hue-rotate {filter: hue-rotate(270deg);}</p>
+						</div>
+
+						<p class="check-pos">
+							<i class="check">drop-shadow</i> - добавляет тень, а также ее направление и цвет, задается четырьмя значениями - по горизонтали, вертикали, радиус и цветовой оттенок тени.
+						</p>
+						<div class="code">
+							<p>img.drop-shadow {filter: drop-shadow(5px 5px 20px #111);}</p>
+						</div>
+            <p>Все эти свойства можно комбинировать. Можно посмотреть тут:  <a target="_blank" href="http://html5-demos.appspot.com/static/css/filters/index.html" style="text-decoration: underline;"><i> Фильтры </i></a></p>
 
 						<div class="close">
 							<b>Заключение:</b>
-								<p>Страница с уроком:
-									<a href="../CSS3filter/index.html">видео по filter</a>
-								</p>
-								<p></p>
+							<p>Страница с уроком:
+								<a href="../CSS3filter/index.html">видео по filter</a>
+							</p>
+							<p></p>
 						</div>
 					</div>
 				</section>
@@ -218,8 +220,8 @@
 					</div>
 				</section>
 				<section>
-            <div class="day">
-            <h2 id="d3">День 3. WOW.js</h2>
+					<div class="day">
+						<h2 id="d3">День 3. WOW.js</h2>
 						<div class="close">
 							<p>
 								<b>Заключение:</b>
@@ -234,7 +236,7 @@
 
 						<div class="close">
 							<p>
-								<b>Заключение:</b>
+                  <b>Заключение:</b>
 
 						</div>
 					</div>
@@ -242,7 +244,7 @@
 				<section>
 					<div class="day">
 						<h2 id="d5">День 5. Косяки и трюки</h2>
-						<p>В этот деь мы не разбирали ничего нового, а боролись с косяками и проблемами нашего дневника.</p>
+              <p>В этот деь мы не разбирали ничего нового, а боролись с косяками и проблемами нашего дневника.</p>
 						<div class="close">
 							<p>
 								<b>Заключение:</b>
