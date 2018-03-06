@@ -2,7 +2,7 @@
 <<<<<<< HEAD
   "name": "site",
   "dependencies": {
-    "jquery": "^1.11.0",
+    "jquery": "^3.3.1",
     "normalize": "^0.3.1"
   }
 =======

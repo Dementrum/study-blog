@@ -52,6 +52,9 @@
 					<li>
 						<a href="form.html">Связаться со мной</a>
 					</li>
+					<li>
+						<a href="dev.html">Инструменты разработчика</a>
+					</li>
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -102,7 +105,7 @@
 						<a href="#d1">День 1. Фильтры</a>
 					</li>
 					<li>
-						<a href="#d2">День 2. Fnimate CSS.</a>
+						<a href="#d2">День 2. Animate CSS.</a>
 					</li>
 					<li>
 						<a href="#d3">День 3. WOW.js</a>
@@ -199,9 +202,10 @@
             <p>Все эти свойства можно комбинировать. Можно посмотреть тут:  <a target="_blank" href="http://html5-demos.appspot.com/static/css/filters/index.html" style="text-decoration: underline;"><i> Фильтры </i></a></p>
 
 						<div class="close">
-							<b>Заключение:</b>
+              <b>Заключение:</b>
+              <p>Познакомились с таким свойством как Filter, которое можно применять без редактирования в фотошопе. Свойство хорошее, но предназначение его остается ене очень нужным. Если только в каких то случаях, его на hover не навешивать.</p>
 							<p>Страница с уроком:
-								<a href="../CSS3filter/index.html">видео по filter</a>
+                <a href="../CSS3filter/index.html" target="_blank"style="text-decoration: underline;"><i> видео по filter</i></a>
 							</p>
 							<p></p>
 						</div>
@@ -211,17 +215,55 @@
 				<section>
 					<div class="day">
 						<h2 id="d2">День 2. Animate CSS.</h2>
-
+            <p>Сегодняшний день был связан с анимациями картинок с помощью готовых скриптов</p>
+            <p>Скрипты для анимации мы выбирали вот тут: <a href="http://daneden.github.io/animate.css/"target="_blank" style="text-decoration: underline;"><i> Скрипты </i></a></p>
+            <h3>Алгоритм подключения скриптов:</h3>
+            <ol>
+              <li>Подключаем файл стилей</li>
+              <div class="code">
+                <p>&lt;link rel="stylesheet" href="animate.css"&gt;</p>
+              </div>
+              <li>Добавляем класс <span class="style">animated</span> элементу, который нужно анимировать.
+                Можно подключить класс <span class="style">infinite</span> , для работы по кругу</li>
+              <li>Выбираем и добавляем эффект анимации в виде класса, например для заголовка</li>
+              <div class="code">
+                <p>&lt;h1&gt; class="animfted wobble"&gt;Animate CSS &lt;/h1&gt;</p>
+              </div>
+              <li>Для анимации при прокрутке страницы необходимо подключить <span class="style">javascript</span> и библиотеку <span class="style">jquery.</span> Код скрипта представлен ниже </li>
+                  <pre>
+                    &lt;script&gt;
+                    &nbsp;$(window).scroll(function()){
+                    &nbsp;&nbsp;var imagePos = $(this).offset().top;
+                    &nbsp;&nbsp;var topOfWindow = $(window).scrollTop();
+                    &nbsp;&nbsp;if (imagePos < topOfWindow+100){
+                    &nbsp;&nbsp;&nbsp;$(this).addClass('bounceIn');
+                    &nbsp;&nbsp;}
+                    &nbsp;});
+                    });
+                    &lt;script&gt;
+                  </pre>
+              <li>Последнюю версию <span class="style">Jquery</span> можно скачать с главной страницы официального сайта <a href="http://jquery.com/>" target=_blank style="text-decoration: underline;"><i>Jquery.com</i></a> </li>
+            <pre>
+              &lt;head&gt;
+              &lt;script type="text/javascript" src="/js/jquery-3.3.1.js"&gt;
+              &lt;head&gt;
+            </pre>
+            </ol>
+            <p>Вот что получилось: <a href="../AnimateCSS/index.html" target="_blank" style="text-decoration: underline;"><i>Animate.css</i></a></p>
 						<div class="close">
 							<p>
 								<b>Заключение:</b>
-
+                <p>Нужная и полезная штука анимации!</p>
 						</div>
 					</div>
 				</section>
 				<section>
 					<div class="day">
 						<h2 id="d3">День 3. WOW.js</h2>
+            <p>Для анимации элементов сайта при прокрутке страницы можно применять специальную JS библиотеку под названием <span class="style"> WOW.js</span>. Она независима от <span class="style">jQuery</span>, как большинство библиотек.Очень проста в подключении и настройке, имеет маленький размер и не создает видимой нагрузки на браузер. Благодаря <span class="style">WOW.js</span>, мы можем управлять анимацией через специальные атрибуты, в том числе временем, задержкой и повторением. 
+            </p>
+            <h3>Подключение и настройка.</h3>
+            
 						<div class="close">
 							<p>
 								<b>Заключение:</b>
