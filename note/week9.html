@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="les.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 	<header>
 		<div class="header">
@@ -123,6 +122,7 @@
 							<li><i>center</i> - размещает блоки по центу</li>
 						</ul>
 
+<<<<<<< HEAD
 						<p><span class="ss">align-items</span> - оно выравнивает блоки по поперечной оси.</p>
 						<ul>
 							<li><i>flex-start</i> - прижимает блоки к началу оси</li>
@@ -261,6 +261,83 @@
 
 	</script>
 	<script src="js/progressbaranimate.js"></script>
+=======
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p>Flex-ы невероятно удобная штука для верстки сайтов, что тут ещё сказать.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d3">День 3. Тонкое управление.</h2>
+                        <p>Мы можем указать flex- контейнеру, чтобы его блоки переносились на новый ряд.</p>
+                        <p><span class="ss">flex-wrap</span> - управляет переносом блоков на новый ряд.</p>
+                        <ul>
+                            <li><i>nowrap</i> - блоки расположены в одну линию.</li>
+                            <li><i>wrap</i> - переносит блоки на новую строку или ряд.</li>
+                            <li><i>wrap-reverse</i> - тоже переносит блоки, только в обратном порядке.</li>
+                        </ul>
+                        <div class="block_important">
+                            <p>Переносы работают только в том случае, если наши блоки не влазят по размерам в один ряд.</p>
+                        </div>
+                        <p><span class="ss">align-content</span> - выравнивает ряды блоков по поперечной оси.</p>
+                        <ul>
+                            <li><i>flex-start</i> - прижимает ряды блоков к началу оси.</li>
+                            <li><i>flex-end</i> -ряды блоков выравниваются с конца главной оси. </li>
+                            <li><i>stretch</i> - оно растягивает ряды блоков по всей поперечной оси.( по умолчанию )</li>
+                            <li><i>center</i> - размещает ряды блоков по центру.</li>
+                             <li><i>space-between</i> -ряды блоков прижимаются к краям главной оси, а остальные блоки равномерно распределяются.</li>
+                            <li><i>space-around </i> - ряды блоков равномерно распределяются по главной оси. </li>
+                         </ul>
+                         <p><span class="ss">flex-flow</span> - обьединение свойств <span class="ss">flex-direction</span> и <span class="ss">flex-wrap</span></p>
+                        <p>То есть вместо двух свойств, мы можем прописать одно с двумя значениями.</p>
+                        <h3>Домашка</h3>
+                        <p> Ссылка на подопытного: <a href="flex.html" target="_blank" style="text-decoration: underline; color: blue;">Подопытный</a></p>
+                          <p> Ссылка на домашнюю работу: <a href="flex3.html" target="_blank" style="text-decoration: underline; color: blue;">Домашка</a></p>
+                        <div class="close">
+                            <p><b>Заключение:</b></p>
+                            <p>Вроде несложно Flex-ы, но пока не привыкнешь путаница происходит</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="day">
+                        <h2 id="d4">День 4. Жадина-говядина.</h2>
+                        <p><span class="ss">flex-grow: 0;</span> - указывает, как блок будет занимать свободное пространство внутри
+                        контейнера, относительно других блоков.</p>
+                        <p>Иначе, в народе, это свойство называют "жадность" блока</p>
+                        <div class="block_important">
+                            <p>Значение этого свойства, не абсолютное, а относительное. Оно указывает, как блок будет забирать свободное пространство внутри контейнера, относительно других блоков.</p>
+                        </div>
+                        <p><span class="ss">flex-shrink:1;</span> - указывает степень сжимаемости блока, если нет свободного пространства.</p>
+                         <div class="block_important">
+                            <p>Работает, когда свободного пространства нет</p>
+                        </div>
+                        <div class="close">
+                            <p><b>Заключение:</b>
+                                <p></p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="mid">
+                <div class="mid">
+                    <img src="images/logo-foot.png" height="50" width="320" alt=""> 2017 &copy; Создано по тренингу "Верстаем на 5+ "2.0"
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+        window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');
+    </script>
+    <script src="js/progressbaranimate.js"></script>
+>>>>>>> af5d01fed3236ab45f7f6a44c2b30774af347b5c
 </body>
 
 </html>

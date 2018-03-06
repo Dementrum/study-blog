@@ -1,7 +1,28 @@
 {
+<<<<<<< HEAD
   "name": "site",
   "dependencies": {
     "jquery": "^1.11.0",
     "normalize": "^0.3.1"
   }
+=======
+  "name": "wf1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-csso": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0-alpha.3",
+    "gulp-csso": "^3.0.1"
+  },
+  "description": ""
+>>>>>>> af5d01fed3236ab45f7f6a44c2b30774af347b5c
 }
