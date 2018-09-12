@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf8">
   <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animate.css">
-  <title>WOW.js + Animate.CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Waypoints</title>
   <script src="./wow.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -20,37 +20,39 @@
 </a>
 
   <div class="main">
-    <h1>WOW.js + Animate.CSS</h1>
-    <h2>лёгкая анимация на практике:</h2>
+    <h1 class="animated flash">Обратная анимация</h1>
+    <h2>при скролле страницы</h2>
     
     <h3>fadeInLeft</h3>
-    <img class = "wow fadeInLeft" data-wow-offset="200" src="images/dog1.jpg" alt="Собака - лучший друг человека">
-    <p><em>class="wow fadeInLeft" data-wow-offset="200"</em></p>
+    <img class = "" src="images/dog1.jpg" alt="Собака - лучший друг человека">
+    <p><em>class=""</em></p>
     
-    <h3>zoomInUp</h3>
-    <img class = "wow zoomInUp" data-wow-offset="200" src="images/dog2.jpg" alt="Собака - лучший друг человека">
-    <p><em>class="wow zoomInUp" data-wow-offset="200"</em></p>
+    <h3>zoomIn</h3>
+    <img id="mov" class="animated hit" src="images/dog2.jpg" alt="Собака - лучший друг человека">
+    <p><em>class=""</em></p>
     
     <h3>FlipInX</h3>
-    <img class="wow flipInX" data-wow-offset="200"src="images/dog3.jpg" alt="Собака - лучший друг человека">
-    <p><em>class="wow flipInX" data-wow-offset="200"</em></p>
+    <img class="" src="images/dog3.jpg" alt="Собака - лучший друг человека">
+    <p><em>class=""</em></p>
     
     <h3>flipInY</h3>
-    <img class="wow flipInY" data-wow-offset="200" src="images/dog4.jpg" alt="Собака - лучший друг человека">
-    <p><em>class="wow flipInY" data-wow-offset="200"</em></p>
+    <img class="" src="images/dog4.jpg" alt="Собака - лучший друг человека">
+    <p><em>class=""</em></p>
     
     <h3>Кучкой веселее :)</h3>
     <div class="dogs">
-      <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s" src="images/dog1.jpg" alt="Собака - лучший друг человека">
-      <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="1.5s" data-wow-duration="1.5s" src="images/dog2.jpg" alt="Собака - лучший друг человека">
-      <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="2s" data-wow-duration="1s" src="images/dog3.jpg" alt="Собака - лучший друг человека">
+      <img class="mov2 animated hit" src="images/dog1.jpg" alt="Собака - лучший друг человека">
+      <img class="mov2 animated hit d03" src="images/dog2.jpg" alt="Собака - лучший друг человека">
+      <img class="mov2 animated hit d06" src="images/dog3.jpg" alt="Собака - лучший друг человека">
     </div>
     
     <h3>zoomInDown</h3>
-    <img class="wow zoomInDown" data-wow-offset="200"src="images/dog5.jpg" alt="Собака - лучший друг человека">
+    <img class="" data-wow-offset="200"src="images/dog5.jpg" alt="Собака - лучший друг человека">
     <p><em>class="zoomInDown" data-wow-offset="200"</em></p>
     
   </div>
    <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+   <script src="wow.min.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>

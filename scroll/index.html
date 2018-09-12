@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf8">
   <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/style.css">
   <title>WOW.js + Animate.CSS</title>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -23,32 +23,35 @@
     <h2>лёгкая анимация на практике:</h2>
     
     <h3>Название анимации</h3>
-    <img src="images/dog1.jpg" alt="Собака - лучший друг человека">
+    <img id="mov"class="hidden" src="images/dog1.jpg"  alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
     
     <h3>Название анимации</h3>
-    <img src="images/dog2.jpg" alt="Собака - лучший друг человека">
+    <img class="mov2 hidden"src="images/dog2.jpg" class="" data-wow-offset="200"alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
     
     <h3>Название анимации</h3>
-    <img src="images/dog3.jpg" alt="Собака - лучший друг человека">
+    <img class="mov3 hidden"src="images/dog3.jpg" alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
     
     <h3>Название анимации</h3>
-    <img src="images/dog4.jpg" alt="Собака - лучший друг человека">
+    <img  class="mov4 hidden" src="images/dog4.jpg" alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
     
     <h3>Кучкой веселее :)</h3>
     <div class="dogs">
-      <img src="images/dog1.jpg" alt="Собака - лучший друг человека">
-      <img src="images/dog2.jpg" alt="Собака - лучший друг человека">
-      <img src="images/dog3.jpg" alt="Собака - лучший друг человека">
+      <img class="mov5 hidden" src="images/dog1.jpg" alt="Собака - лучший друг человека">
+      <img class="mov6 hidden" src="images/dog2.jpg" alt="Собака - лучший друг человека">
+      <img class="mov7 hidden" src="images/dog3.jpg" alt="Собака - лучший друг человека">
     </div>
     
     <h3>Название анимации</h3>
-    <img src="images/dog5.jpg" alt="Собака - лучший друг человека">
+    <img class="mov8 hidden" src="images/dog5.jpg" alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
     
   </div>
+  <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script/jquery.waypoints.min.js" ></script>
+  <script src="script/script.js"></script>
 </body>
 </html>

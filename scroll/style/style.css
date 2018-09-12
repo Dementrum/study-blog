@@ -21,3 +21,10 @@ h3{font-size: 20px; padding: 40px 0; margin: 40px 0 0; border-top: 1px dashed #7
 div.dogs img{width: 170px; height: auto;}
 
 img.mylogo{position: fixed; left: 0; bottom: 0; padding: 0; border: 0; margin: 0 0 1px 1px;}
+
+.hidden {
+  visibility: hidden;
+}
+#mov,.mov1, .mov2, .mov3 {
+  visibility: visible;
+}

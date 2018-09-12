@@ -229,7 +229,8 @@
               <div class="code">
                 <p>&lt;h1&gt; class="animfted wobble"&gt;Animate CSS &lt;/h1&gt;</p>
               </div>
-              <li>Для анимации при прокрутке страницы необходимо подключить <span class="style">javascript</span> и библиотеку <span class="style">jquery.</span> Код скрипта представлен ниже </li>
+              <li>Для анимации при прокрутке страницы необходимо подключить <span class="style">javascript</span> и библиотеку 
+              	<span class="style">jquery.</span> Код скрипта представлен ниже </li>
                   <pre>
                     &lt;script&gt;
                     &nbsp;$(window).scroll(function()){
@@ -304,6 +305,10 @@
 				<section>
 					<div class="day">
 						<h2 id="d4">День 4. Waypoints</h2>
+            <p><i>Waypoints</i> - это библиотека <span class="style">Js</span>, работающая в паре с <span class="style">JQuery/Zepto</span>, и с третьей версии, по заявлению автора, не имеет жестких зависимостей и работает самостоятельно. При помощи ее можно добиться анимационных эффектов над элементами при прокрутке страницы, и сегодня будет рассмотрен тот же эффект, что и при использовании библиотеки <span class="style">WOW.js</span>, который был рассмотрен <a href="#d3" style="text-decoration:underline"><i>выше</i></a></p>
+            <p>Информация о скрипте <b><i>Waypoints</i> можно посмотреть <a href="http://imakewebthings.com/waypoints/" target="_blank"><b><i>здесь</i></b></a></b></p>
+            <p>Для реализации задачи будут использованы сборка анимационных эффектов <span class="style">animate.css</span>, а также библиотека <span class="style">jQuery</span>, подключенная через Яндекс-сервис.</p>
+            <p>Чтобы все заработало нужно подключить следующие скрипты JQuery и Waypoints перед закрывающим тегом <b>&lt;/body&gt;</b></p>
 
 						<div class="close">
 							<p>
@@ -322,7 +327,7 @@
 								<b>Заключение:</b>
 								<p>Познакомились с новым способом обтекания.</p>
 								<p>Узнали почему криво работают градиенты.</p>
-								<p>Покавырялись немного с отображением сайта в IE.</p>
+								<p>Поковырялись немного с отображением сайта в IE.</p>
 						</div>
 					</div>
 				</section>
@@ -343,7 +348,7 @@
 		window.JQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');
 	</script>
 	<script src="js/progressbaranimate.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
 
 </html>
